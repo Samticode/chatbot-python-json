@@ -1,66 +1,58 @@
+# Import necessary libraries
 import json
 import re
 import random_responses
 
-
-# Load JSON data
-def load_json(file):
-    with open(file) as bot_responses:
+# Function to load responses from a JSON file
+def load_responses(file):
+    with open(file) as file:
         print(f"Loaded '{file}' successfully!")
-        return json.load(bot_responses)
+        return json.load(file)
 
+# Load responses from the bot.json file
+responses = load_responses("./bot.json")
 
-# Store JSON data
-response_data = load_json("./bot.json")
+# Function to get the best response based on user input
+def get_best_response(user_input):
+    # Split the user input into words
+    words_in_input = re.split(r'\s+|[,;?!.-]\s*', user_input.lower())
+    # Initialize a list to store scores for each response
+    response_scores = []
 
-
-def get_response(input_string):
-    split_message = re.split(r'\s+|[,;?!.-]\s*', input_string.lower())
-    score_list = []
-
-
-    # Check all the responses
-    for response in response_data:
-        response_score = 0
-        required_score = 0
+    # Loop through each response
+    for response in responses:
+        # Initialize score for this response
+        score = 0
+        # Get the required words for this response
         required_words = response["required_words"]
 
-        # Check if there are any required words
+        # If there are required words, increment score for each word in user input
         if required_words:
-            for word in split_message:
-                if word in required_words:
-                    required_score += 1
+            score += sum(word in required_words for word in words_in_input)
 
-        # Amount of required words should match the required score
-        if required_score == len(required_words):
-            # print(required_score == len(required_words))
-            # Check each word the user has typed
-            for word in split_message:
-                # If the word is in the response, add to the score
-                if word in response["user_input"]:
-                    response_score += 1
+        # If all required words are present, increment score for each word in user input
+        if score == len(required_words):
+            score += sum(word in response["user_input"] for word in words_in_input)
 
-        # Add score to list
-        score_list.append(response_score)
-        # Debugging: Find the best phrase
-        print(response_score, response["user_input"])
+        # Append the score for this response to the list of scores
+        response_scores.append(score)
 
-    # Find the best response and return it if they're not all 0
-    best_response = max(score_list)
-    response_index = score_list.index(best_response)
+    # Find the maximum score and its index
+    max_score = max(response_scores)
+    max_score_index = response_scores.index(max_score)
 
-    # Check if input is empty
-    if input_string == "":
+    # If user input is empty, return a prompt for input
+    if user_input == "":
         return "Please type something so we can chat :("
 
-    # If there is no good response, return a random one.
-    if best_response != 0:
-        return response_data[response_index]["bot_response"]
+    # If a response with a non-zero score was found, return it
+    if max_score != 0:
+        return responses[max_score_index]["bot_response"]
 
+    # If no suitable response was found, return a random response
     return random_responses.random_string()
 
-
+# Main loop to get user input and print the bot's response
 while True:
     user_input = input("You: ")
-    print("Bot:", get_response(user_input))
-    
+    print("Bot:", get_best_response(user_input))

@@ -6,33 +6,21 @@
       "required_words": []
     },
     {
-      "response_type": "greeting",
-      "user_input": ["see you", "goodbye", "bye"],
-      "bot_response": "See you later!",
+      "response_type": "bye",
+      "user_input": ["bye", "goodbye", "see you", "later"],
+      "bot_response": "Goodbye!",
       "required_words": []
     },
     {
-      "response_type": "greeting",
-      "user_input": ["nice", "to", "meet", "you"],
-      "bot_response": "The pleasure is all mine!",
-      "required_words": ["nice", "meet", "you"]
+      "response_type": "question",
+      "user_input": ["access", "violation", "error", "close", "nordicaktiva", "worried"],
+      "bot_response": "No. This is a known issue but does not affect the performance of the software. This will be solved in the next version of nordicAktiva.",
+      "required_words": ["access", "violation", "nordicaktiva"]
     },
     {
       "response_type": "question",
-      "user_input": ["how", "to", "learn", "code", "coding", "apps"],
-      "bot_response": "Start by typing: 'How to learn coding' on Google.",
-      "required_words": ["learn", "code"]
-    },
-    {
-      "response_type": "question",
-      "user_input": ["refund", "how", "can", "I", "get"],
-      "bot_response": "We don't offer refunds for free education.",
-      "required_words": ["refund", "i"]
-    },
-    {
-      "response_type": "question",
-      "user_input": ["how", "are", "you"],
-      "bot_response": "I'm great! Thanks for asking.",
-      "required_words": ["how", "are", "you"]
+      "user_input": ["add", "video", "audio", "nordiccomfortplayer", "nordiccomfortplayer's", "streaming"],
+      "bot_response": "Yes! Open the C Drive on the nordicComfortPlayer’s PC and there you will find two folders: ‘movies’ and ‘music’. Copy your desired video or audio files into these folders accordingly. For videos, you can choose if you want to add the new files to the ‘general’ or ‘children’ folder. After adding the files, start nordicComfortPlayer and you should be able to see and play the newly added videos or audio files in the media library.",
+      "required_words": ["add", "nordiccomfortplayer"]
     }
   ]
