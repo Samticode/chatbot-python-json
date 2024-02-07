@@ -3,12 +3,10 @@ import random
 
 def random_string():
     random_list = [
-        "Please try writing something more descriptive.",
-        "Oh! It appears you wrote something I don't understand yet",
-        "Do you mind trying to rephrase that?",
-        "I'm terribly sorry, I didn't quite catch that.",
-        "I can't answer that yet, please try asking something else.",
-        "Huhhh?"
+        '<p>Jeg er ikke sikker på hva du mener.</p>',
+        '<p>Kan du utdype?</p>',
+        '<p>Kan du si det på en annen måte?</p>',
+        '<p>Ta kontakt med url for å få svar.</p>'
     ]
 
     list_count = len(random_list)

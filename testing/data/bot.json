@@ -1,14 +1,20 @@
 [
     {
       "response_type": "greeting",
-      "user_input": ["hello", "hi", "hey"],
+      "user_input": ["heisann", "hi", "hey"],
       "bot_response": "Hey there!",
       "required_words": []
     },
     {
       "response_type": "bye",
-      "user_input": ["bye", "goodbye", "see you", "later"],
+      "user_input": ["bye", "goodbye", "seeyou", "later"],
       "bot_response": "Goodbye!",
+      "required_words": []
+    },
+    {
+      "response_type": "hjelp",
+      "user_input": ["hjelp", "hva", "kan", "du"],
+      "bot_response": "Jeg kan svare på FAQ spørsmål! Bare spør meg!",
       "required_words": []
     },
     {
