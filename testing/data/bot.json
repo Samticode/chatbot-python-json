@@ -3,30 +3,35 @@
       "response_type": "greeting",
       "user_input": ["heisann", "hi", "hey"],
       "bot_response": "Hey there!",
-      "required_words": []
+      "required_words": [],
+      "inwgrni" : ""
     },
     {
       "response_type": "bye",
       "user_input": ["bye", "goodbye", "seeyou", "later"],
       "bot_response": "Goodbye!",
-      "required_words": []
+      "required_words": [],
+      "inwgrni" : ""
     },
     {
       "response_type": "hjelp",
       "user_input": ["hjelp", "hva", "kan", "du"],
       "bot_response": "Jeg kan svare på FAQ spørsmål! Bare spør meg!",
-      "required_words": []
+      "required_words": [],
+      "inwgrni" : ""
     },
     {
       "response_type": "question",
       "user_input": ["access", "violation", "error", "close", "nordicaktiva", "worried"],
       "bot_response": "No. This is a known issue but does not affect the performance of the software. This will be solved in the next version of nordicAktiva.",
-      "required_words": ["access", "violation", "nordicaktiva"]
+      "required_words": ["access", "violation", "nordicaktiva"],
+      "inwgrni" : ""
     },
     {
       "response_type": "question",
       "user_input": ["add", "video", "audio", "nordiccomfortplayer", "nordiccomfortplayer's", "streaming"],
       "bot_response": "Yes! Open the C Drive on the nordicComfortPlayer’s PC and there you will find two folders: ‘movies’ and ‘music’. Copy your desired video or audio files into these folders accordingly. For videos, you can choose if you want to add the new files to the ‘general’ or ‘children’ folder. After adding the files, start nordicComfortPlayer and you should be able to see and play the newly added videos or audio files in the media library.",
-      "required_words": ["add", "nordiccomfortplayer"]
+      "required_words": ["add", "nordiccomfortplayer"],
+      "inwgrni" : ""
     }
   ]

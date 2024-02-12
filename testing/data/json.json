@@ -1,35 +1,54 @@
 [
     {
-        "Questin": "An \u2018access violation' error appears when I close nordicAktiva. Should I be worried?",
-        "Item ID": "6479ed85f2e806e8d0bea061",
-        "Created On": "Fri Jun 02 2023 13:24:21 GMT+0000 (Coordinated Universal Time)",
-        "Updated On": "Wed Jun 21 2023 11:39:27 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>No. This is a known issue but does not affect the performance of the software. This will be solved in the next version of nordicAktiva.</p>"
+        "response_type": "greeting",
+        "user_input": ["hello", "hi", "hey"],
+        "bot_response": "<p>Hey there! Tell me your problem and I will try to help you!</p>",
+        "required_words": []
     },
     {
-        "Questin": "Can I add my own video or audio files to nordicComfortPlayer\u2019s library for streaming?",
-        "Item ID": "649040d67adbf4f6d418ad9c",
-        "Created On": "Mon Jun 19 2023 11:49:42 GMT+0000 (Coordinated Universal Time)",
-        "Updated On": "Wed Jun 21 2023 11:37:10 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p>Yes! Open the C Drive on the nordicComfortPlayer\u2019s PC and there you will find two folders: \u2018movies\u2019 and \u2018music\u2019. Copy your desired video or audio files into these folders accordingly. For videos, you can choose if you want to add the new files to the \u2018general\u2019 or \u2018children\u2019 folder. After adding the files, start nordicComfortPlayer and you should be able to see and play the newly added videos or audio files in the media library.</p>"
+        "response_type": "bye",
+        "user_input": ["bye", "goodbye", "seeyou", "later"],
+        "bot_response": "<p>Goodbye!</p>",
+        "required_words": []
     },
     {
-        "Questin": "Can I connect my laptop or existing control room PC to the NNL LCD monitor?",
+        "response_type": "hjelp",
+        "user_input": ["help", "what", "can", "you"],
+        "bot_response": "<p>Tell me your problem and I will try to help you!</p>",
+        "required_words": []
+    },
+    {
+        "response_type": "question",
+        "user_input": ["access", "violation", "error", "close", "nordicaktiva", "worried"],
+        "bot_response": "<p>No. This is a known issue but does not affect the performance of the software. This will be solved in the next version of nordicAktiva.</p>",
+        "required_words": ["access", "violation", "nordicaktiva"]
+    },
+    {
+        "response_type": "question",
+        "user_input": ["add", "video", "audio", "nordiccomfortplayer", "nordiccomfortplayer's", "streaming"],
+        "bot_response": "<p>Yes! Open the C Drive on the nordicComfortPlayer’s PC and there you will find two folders: ‘movies’ and ‘music’. Copy your desired video or audio files into these folders accordingly. For videos, you can choose if you want to add the new files to the ‘general’ or ‘children’ folder. After adding the files, start nordicComfortPlayer and you should be able to see and play the newly added videos or audio files in the media library.</p>",
+        "required_words": ["add", "nordiccomfortplayer"]
+    },
+    {
+        "response_type": "question",
+        "user_input": ["connect", "laptop", "existing", "pc", "nnl", "lcd", "monitor"],
+        "bot_response": "<p>Yes. There is a standard HDMI connection to the LCD in the control room. Just plug the HDMI cable into your computer, and the LCD can be used in the same way as any other second monitor.</p>",
+        "required_words": ["connect", "laptop", "lcd", "monitor"],
         "Item ID": "64903fcd33c77d1dc8b28e03",
         "Created On": "Mon Jun 19 2023 11:45:17 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:57 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "inroomviewingdevice",
-        "bot_response": "<p>Yes. There is a standard HDMI connection to the LCD in the control room. Just plug the HDMI cable into your computer, and the LCD can be used in the same way as any other second monitor.</p>"
+        "Category / categories": "inroomviewingdevice"
     },
     {
+        "response_type": "question",
+        "user_input": ["connect", "nordicaktiva", "nordicaktiva's", "paradigms", "visualsystem", "hd", "goggles"],
+        "bot_response": "<p>Yes, all nordicAktiva paradigms can be displayed on the VisualSystem HD goggles. The HDMI output of the nordicAktiva PC can be connected to a splitter, which then gives rise to two identical HDMI outputs, one for each of the two independent displays. More information can be found in the \u2018Display Setup for VisualSystem HD\u2019 guide on our <a href=\"https://www.nordicneurolab.com/resources#user-guides\" target=\"_blank\"><strong><em>website</em></strong></a><strong><em>.</em></strong> If you have both the LCD monitor and the VisualSystem HD goggles and need to switch often between them, you can add an HDMI switch to smoothly transfer the display from one to the other.</p>",
+        "required_words": ["connect", "nordicaktiva", "visualsystem", "hd", "goggles"],
         "Questin": "Can I display paradigms from nordicAktiva on the VisualSystem HD goggles?",
         "Item ID": "6490417c083b39e263e98778",
         "Created On": "Mon Jun 19 2023 11:52:28 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:36:43 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "visualsystemhd",
-        "bot_response": "<p>Yes, all nordicAktiva paradigms can be displayed on the VisualSystem HD goggles. The HDMI output of the nordicAktiva PC can be connected to a splitter, which then gives rise to two identical HDMI outputs, one for each of the two independent displays. More information can be found in the \u2018Display Setup for VisualSystem HD\u2019 guide on our <a href=\"https://www.nordicneurolab.com/resources#user-guides\" target=\"_blank\"><strong><em>website</em></strong></a><strong><em>.</em></strong> If you have both the LCD monitor and the VisualSystem HD goggles and need to switch often between them, you can add an HDMI switch to smoothly transfer the display from one to the other.</p>"
+        "Category / categories": "visualsystemhd"
     },
     {
         "Questin": "Can I forward the received MR-triggers from the SyncBox to other equipment?  ",

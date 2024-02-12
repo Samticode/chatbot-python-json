@@ -10,7 +10,7 @@ def load_responses(file):
         return json.load(file)
 
 # Load responses from the bot.json file
-responses = load_responses("./data/bot.json")
+responses = load_responses("./data/testing.json")
 
 # Function to get the best response based on user input
 def get_best_response(user_input):
@@ -43,7 +43,7 @@ def get_best_response(user_input):
 
     # If user input is empty, return a prompt for input
     if user_input == "":
-        return "Skriv noe så kan jeg hjelpe deg."
+        return "Tell me your problems, I'm here to help!"
 
     # If a response with a non-zero score was found, return it
     if max_score != 0:
@@ -54,5 +54,5 @@ def get_best_response(user_input):
 
 # Main loop to get user input and print the bot's response
 while True:
-    user_input = input("Deg: ")
+    user_input = input("You: ")
     print("NNL Chatbot:", get_best_response(user_input))

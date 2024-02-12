@@ -3,10 +3,9 @@ import random
 
 def random_string():
     random_list = [
-        '<p>Jeg er ikke sikker på hva du mener.</p>',
-        '<p>Kan du utdype?</p>',
-        '<p>Kan du si det på en annen måte?</p>',
-        '<p>Ta kontakt med url for å få svar.</p>'
+        '<p>I am not sure what you are trying to say.</p>',
+        '<p>Can you say it in another way.</p>',
+        '<p>Get in contact with us on <a href="https://www.nordicneurolab.com/support">NordicNeuroLab.con</a></p>'
     ]
 
     list_count = len(random_list)
