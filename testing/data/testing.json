@@ -34,6 +34,7 @@
         "user_input": ["connect", "laptop", "existing", "pc", "nnl", "lcd", "monitor"],
         "bot_response": "<p>Yes. There is a standard HDMI connection to the LCD in the control room. Just plug the HDMI cable into your computer, and the LCD can be used in the same way as any other second monitor.</p>",
         "required_words": ["connect", "laptop", "lcd", "monitor"],
+        
         "Item ID": "64903fcd33c77d1dc8b28e03",
         "Created On": "Mon Jun 19 2023 11:45:17 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:57 GMT+0000 (Coordinated Universal Time)",
@@ -44,6 +45,7 @@
         "user_input": ["connect", "nordicaktiva", "nordicaktiva's", "paradigms", "visualsystem", "hd", "goggles"],
         "bot_response": "<p>Yes, all nordicAktiva paradigms can be displayed on the VisualSystem HD goggles. The HDMI output of the nordicAktiva PC can be connected to a splitter, which then gives rise to two identical HDMI outputs, one for each of the two independent displays. More information can be found in the \u2018Display Setup for VisualSystem HD\u2019 guide on our <a href=\"https://www.nordicneurolab.com/resources#user-guides\" target=\"_blank\"><strong><em>website</em></strong></a><strong><em>.</em></strong> If you have both the LCD monitor and the VisualSystem HD goggles and need to switch often between them, you can add an HDMI switch to smoothly transfer the display from one to the other.</p>",
         "required_words": ["connect", "nordicaktiva", "visualsystem", "hd", "goggles"],
+
         "Questin": "Can I display paradigms from nordicAktiva on the VisualSystem HD goggles?",
         "Item ID": "6490417c083b39e263e98778",
         "Created On": "Mon Jun 19 2023 11:52:28 GMT+0000 (Coordinated Universal Time)",
@@ -51,76 +53,112 @@
         "Category / categories": "visualsystemhd"
     },
     {
+        "response_type": "question",
+        "user_input": ["forward", "received", "mr-triggers", "syncbox", "other", "equipment"],
+        "bot_response": "<p>Yes, the SyncBox can forward the MR-triggers to other equipment, e.g., an EEG system. There are, however, different approaches depending on your setup: </p><ul><li>If you are not using the ResponseGrips in your setup, then you can use the TTL port (9) on the SyncBox in order to forward the triggers. The TTL port should then be connected to the parallel port of your system. </li><li>You can also forward the received triggers using the serial port (4) on the SyncBox. Here you will need a serial cable which connects the SyncBox to your system. </li></ul>",
+        "required_words": ["forward", "mr-triggers", "syncbox"],
+
         "Questin": "Can I forward the received MR-triggers from the SyncBox to other equipment?  ",
         "Item ID": "64942dc0221ba05b97785ae2",
         "Created On": "Thu Jun 22 2023 11:17:20 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Thu Jun 22 2023 11:17:20 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "syncbox",
-        "bot_response": "<p id=\"\">Yes, the SyncBox can forward the MR-triggers to other equipment, e.g., an EEG system. There are, however, different approaches depending on your setup: </p><ul id=\"\"><li>If you are not using the ResponseGrips in your setup, then you can use the TTL port (9) on the SyncBox in order to forward the triggers. The TTL port should then be connected to the parallel port of your system. </li><li>You can also forward the received triggers using the serial port (4) on the SyncBox. Here you will need a serial cable which connects the SyncBox to your system. </li></ul><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div><img alt=\"A picture containing text, sketch, diagram, drawingDescription automatically generated\" src=\"https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64942db6d2a19f840e84982d_fbfc27f9.png\" id=\"\" width=\"auto\" height=\"auto\" loading=\"auto\"></div></figure><p id=\"\"> </p><p>\u200d</p>"
+        "Category / categories": "syncbox"
     },
     {
+        "response_type": "question",
+        "user_input": ["install", "nordicaktiva", "another", "computer"],
+        "bot_response": "<p>Yes, it is possible to install nordicAktiva on computers other than that provided by NordicNeuroLab. Below are the minimum requirements:</p><p> Operating system:</p><p>o Windows 7, 8.1, or 10</p><p> Hardware:</p><p>o Intel i3 processor or equivalent</p><p>o 4 GB RAM</p><p>o 100 MB of free space on hard disk</p><p>o DirectX 9 compatible graphics card with dual video outputs</p><p>o Audio outputs</p><p>o USB or serial port (for NNL SyncBox connection) <br><br>For further support, please contact us at <a href='mailto:applicationsupport@nordicneurolab.com'>applicationsupport@nordicneurolab.com</a>.</p>",
+        "required_words": ["install", "nordicaktiva", "another", "computer"],
+        
         "Questin": "Can I install nordicAktiva on another computer?",
         "Item ID": "6479e9fa1dab0f155da57e35",
         "Created On": "Fri Jun 02 2023 13:09:14 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:38 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">Yes, it is possible to install nordicAktiva on computers other than that provided by NordicNeuroLab. Below are the minimum requirements:</p><p id=\"\">\u00b7 Operating system:</p><p id=\"\">o Windows 7, 8.1, or 10</p><p id=\"\">\u00b7 Hardware:</p><p id=\"\">o Intel i3 processor or equivalent</p><p id=\"\">o 4 GB RAM</p><p id=\"\">o 100 MB of free space on hard disk</p><p id=\"\">o DirectX 9 compatible graphics card with dual video outputs</p><p id=\"\">o Audio outputs</p><p id=\"\">o USB or serial port (for NNL SyncBox connection) <br><br>For further support, please contact us at <a href=\"mailto:applicationsupport@nordicneurolab.com\">applicationsupport@nordicneurolab.com</a>.</p><p>\u200d</p><p id=\"\">\u200d</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["use", "responsegrips", "stimulus", "presentation", "software", "packages"],
+        "bot_response": "<p>Yes, it is possible to use the NNL ResponseGrips with other stimulus software packages, such as PsychoPy, Presentation, and E-Prime. Responses from ResponseGrips are received by the ResponseGrip Interface. It then forwards the received responses to the NNL SyncBox, which in turn forwards them to the stimulation PC. This means that you need to connect and set up your stimulation software with the NNL SyncBox. For setup instructions, please visit our<a href='https://www.nordicneurolab.com/resources#user-guides' target='_blank'> <strong><em>website,</em></strong></a> where different guides are available. We are constantly expanding and updating these guides. If you are interested in specific software for which a guide is not available on our website, please contact us at <a href='mailto:applicationsupport@nordicneurolab.com' target='_blank'>applicationsupport@nordicneurolab.com</a>.</p>",
+        "required_words": ["use", "responsegrips", "stimulus", "presentation", "software"],
+
         "Questin": "Can I use the ResponseGrips with other stimulus presentation software packages? ",
         "Item ID": "64942e15f163c1e424263ba8",
         "Created On": "Thu Jun 22 2023 11:18:45 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Thu Jun 22 2023 11:18:45 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "responsegrips",
-        "bot_response": "<p>Yes, it is possible to use the NNL ResponseGrips with other stimulus software packages, such as PsychoPy, Presentation, and E-Prime. Responses from ResponseGrips are received by the ResponseGrip Interface. It then forwards the received responses to the NNL SyncBox, which in turn forwards them to the stimulation PC. This means that you need to connect and set up your stimulation software with the NNL SyncBox. For setup instructions, please visit our<a href=\"https://www.nordicneurolab.com/resources#user-guides\" target=\"_blank\"> <strong><em>website,</em></strong></a> where different guides are available. We are constantly expanding and updating these guides. If you are interested in specific software for which a guide is not available on our website, please contact us at <a href=\"mailto:applicationsupport@nordicneurolab.com\" target=\"_blank\" id=\"\">applicationsupport@nordicneurolab.com</a>.</p>"
+        "Category / categories": "responsegrips"
     },
     {
+        "response_type": "question",
+        "user_input": ["use", "syncbox", "other", "stimulus", "presentation", "software", "applications"],
+        "bot_response": "<p>Yes, SyncBox can be used in conjunction with other stimulus software packages, such as E-Prime, Presentation, and PsychoPy. You can find different setup instructions on our website, which we are constantly expanding and updating. If you are interested in specific software for which a guide is not available on our <a href='https://www.nordicneurolab.com/resources#user-guides' target='_blank'><strong><em>website</em></strong></a>, please contact us at <a href='mailto:applicationsupport@nordicneurolab.com' target='_blank'>applicationsupport@nordicneurolab.com</a>.</p>",
+        "required_words": ["use", "syncbox", "stimulus", "presentation", "software"],
+
         "Questin": "Can I use the SyncBox with other stimulus presentation software applications? ",
         "Item ID": "64942da2f8420c5ef60d7aa5",
         "Created On": "Thu Jun 22 2023 11:16:50 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Tue Jun 27 2023 12:41:04 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "syncbox",
-        "bot_response": "<p id=\"\">Yes, SyncBox can be used in conjunction with other stimulus software packages, such as E-Prime, Presentation, and PsychoPy. You can find different setup instructions on our website, which we are constantly expanding and updating. If you are interested in specific software for which a guide is not available on our <a href=\"https://www.nordicneurolab.com/resources#user-guides\" target=\"_blank\"><strong><em>website</em></strong></a>, please contact us at <a href=\"mailto:applicationsupport@nordicneurolab.com\" target=\"_blank\" id=\"\">applicationsupport@nordicneurolab.com</a>.</p>"
+        "Category / categories": "syncbox"
     },
     {
+        "response_type": "question",
+        "user_input": ["subject", "responses", "used", "control", "content", "paradigm"],
+        "bot_response": "<p>nordicAktiva does not support any control of the paradigm content by the subject. The ResponseGrips can be used to indicate a response to a given slide, but it is not possible to include conditional statements such as if.... else.</p>",
+        "required_words": ["subject", "responses", "control", "paradigm"],
+
         "Questin": "Can subject responses be used to control the content of the paradigm? ",
         "Item ID": "649179e5cc23b5082d41c2ee",
         "Created On": "Tue Jun 20 2023 10:05:25 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:36:12 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>nordicAktiva does not support any control of the paradigm content by the subject. The ResponseGrips can be used to indicate a response to a given slide, but it is not possible to include conditional statements such as if.... else.</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["upgrade", "nordiccomfortsolution", "fmri"],
+        "bot_response": "<p>If you want to upgrade your nordicComfortSolution to a Basic fMRI Solution, you will need to add the SyncBox and ResponseGrips, and nordicAktiva. The SyncBox provides precise synchronization of the stimuli with the MRI scan, while the ResponseGrips allow patients to respond to the stimuli during the scan. The nordicAktiva software provides a wide range of stimulus presentation options, making it easy to create and present stimuli during fMRI scans.</p><p>To get a quote on upgrading your nordicComfortSolution, we recommend contacting your local sales representative. <br>They will be able to provide you with pricing and other information about the necessary components and software.</p>",
+        "required_words": ["upgrade", "nordiccomfortsolution", "fmri"],
+
         "Questin": "Can the nordicComfortSolution be upgraded to be used for fMRI? ",
         "Item ID": "644a483cdfae0b2e745feda0",
         "Created On": "Thu Apr 27 2023 10:02:36 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:58 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "syncbox",
-        "bot_response": "<p id=\"\">If you want to upgrade your nordicComfortSolution to a Basic fMRI Solution, you will need to add the SyncBox and ResponseGrips, and nordicAktiva. The SyncBox provides precise synchronization of the stimuli with the MRI scan, while the ResponseGrips allow patients to respond to the stimuli during the scan. The nordicAktiva software provides a wide range of stimulus presentation options, making it easy to create and present stimuli during fMRI scans.</p><p id=\"\">To get a quote on upgrading your nordicComfortSolution, we recommend contacting your local sales representative. <br>They will be able to provide you with pricing and other information about the necessary components and software.</p><p id=\"\">\u200d</p>"
+        "Category / categories": "syncbox"
     },
     {
+        "response_type": "question",
+        "user_input":["i", "need", "mirror"],
+        "bot_response": "<p>To see the screen while laying inside the bore, a mirror is necessary. <br>If the MR vendor does not provide a mirror, NordicNeuroLab can provide a mirror option. </p>",
+        "required_words": ["need", "mirror"],
+
         "Questin": "Do we need a mirror?",
         "Item ID": "644a2b2e20ff425fa78fd8ae",
         "Created On": "Thu Apr 27 2023 07:58:38 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:41:11 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p id=\"\">To see the screen while laying inside the bore, a mirror is necessary. <br>If the MR vendor does not provide a mirror, NordicNeuroLab can provide a mirror option. </p><p id=\"\">\u200d</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["other", "paradigms", "not", "library"],
+        "bot_response": "<p>We do have additional paradigms available to test, and we welcome feedback on these. <br>Please navigate to the<strong><em> </em></strong><a href='https://nordicneurolab.circle.so/c/paradigms-nordicaktiva/' target='_blank'><strong><em>\u2018Paradigm Exchange</em></strong></a><strong><em>\u2019 </em></strong>page on NNL Forum to access these paradigms. <br><br>If you have any further needs or suggestions, please get in touch via <a href='mailto:applicationsupport@nordicneurolab.com'>applicationsupport@nordicneurolab.com.</a></p>",
+        "required_words": ["other", "paradigms", "not", "library"],
+
         "Questin": "Do you have other paradigms which are not in the library?",
         "Item ID": "6479ed25a12067941dfdf8ec",
         "Created On": "Fri Jun 02 2023 13:22:45 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Tue Jun 27 2023 12:49:24 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">We do have additional paradigms available to test, and we welcome feedback on these. <br>Please navigate to the<strong id=\"\"><em id=\"\"> </em></strong><a href=\"https://nordicneurolab.circle.so/c/paradigms-nordicaktiva/\" id=\"\"><strong id=\"\"><em id=\"\">\u2018Paradigm Exchange</em></strong></a><strong id=\"\"><em id=\"\">\u2019 </em></strong>page on NNL Forum to access these paradigms. <br><br>If you have any further needs or suggestions, please get in touch via <a href=\"mailto:applicationsupport@nordicneurolab.com\">applicationsupport@nordicneurolab.com.</a></p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["other", "response", "devices"],
+        "bot_response": "<p>No, at the moment the only available response devices we have are the ergonomic ResponseGrips. If you are interested in any other response button devices, please feel free to let us know at <a href='mailto:applicationsupport@nordicneurolab.com' target='_blank'>applicationsupport@nordicneurolab.com</a>, as we welcome suggestions for future developments.</p>",
+        "required_words": ["other", "response", "devices"],
+
         "Questin": "Do you have other response devices? ",
         "Item ID": "64942e2a04997c08f369a743",
         "Created On": "Thu Jun 22 2023 11:19:06 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Thu Jun 22 2023 11:19:06 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "responsegrips",
-        "bot_response": "<p>No, at the moment the only available response devices we have are the ergonomic ResponseGrips. If you are interested in any other response button devices, please feel free to let us know at <a href=\"mailto:applicationsupport@nordicneurolab.com\" target=\"_blank\" id=\"\">applicationsupport@nordicneurolab.com</a>, as we welcome suggestions for future developments.</p>"
+        "Category / categories": "responsegrips"
     },
     {
         "Questin": "Does nordicAktiva support devices from other vendors?",

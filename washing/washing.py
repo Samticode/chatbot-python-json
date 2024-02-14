@@ -31,5 +31,5 @@ for row in data:
         
         
 # Write the edited data to a JSON file
-with open('./json.json', 'w') as fun:
-    json.dump(data, fun, indent=4)
+# with open('./json.json', 'w') as fun:
+#     json.dump(data, fun, indent=4)
