@@ -43,7 +43,7 @@
     {
         "response_type": "question",
         "user_input": ["connect", "nordicaktiva", "nordicaktiva's", "paradigms", "visualsystem", "hd", "goggles"],
-        "bot_response": "<p>Yes, all nordicAktiva paradigms can be displayed on the VisualSystem HD goggles. The HDMI output of the nordicAktiva PC can be connected to a splitter, which then gives rise to two identical HDMI outputs, one for each of the two independent displays. More information can be found in the \u2018Display Setup for VisualSystem HD\u2019 guide on our <a href=\"https://www.nordicneurolab.com/resources#user-guides\" target=\"_blank\"><strong><em>website</em></strong></a><strong><em>.</em></strong> If you have both the LCD monitor and the VisualSystem HD goggles and need to switch often between them, you can add an HDMI switch to smoothly transfer the display from one to the other.</p>",
+        "bot_response": "<p>Yes, all nordicAktiva paradigms can be displayed on the VisualSystem HD goggles. The HDMI output of the nordicAktiva PC can be connected to a splitter, which then gives rise to two identical HDMI outputs, one for each of the two independent displays. More information can be found in the 'Display Setup for VisualSystem HD' guide on our <a href=\"https://www.nordicneurolab.com/resources#user-guides\" target=\"_blank\"><strong><em>website</em></strong></a><strong><em>.</em></strong> If you have both the LCD monitor and the VisualSystem HD goggles and need to switch often between them, you can add an HDMI switch to smoothly transfer the display from one to the other.</p>",
         "required_words": ["connect", "nordicaktiva", "visualsystem", "hd", "goggles"],
 
         "Questin": "Can I display paradigms from nordicAktiva on the VisualSystem HD goggles?",
@@ -139,7 +139,7 @@
     {
         "response_type": "question",
         "user_input": ["other", "paradigms", "not", "library"],
-        "bot_response": "<p>We do have additional paradigms available to test, and we welcome feedback on these. <br>Please navigate to the<strong><em> </em></strong><a href='https://nordicneurolab.circle.so/c/paradigms-nordicaktiva/' target='_blank'><strong><em>\u2018Paradigm Exchange</em></strong></a><strong><em>\u2019 </em></strong>page on NNL Forum to access these paradigms. <br><br>If you have any further needs or suggestions, please get in touch via <a href='mailto:applicationsupport@nordicneurolab.com'>applicationsupport@nordicneurolab.com.</a></p>",
+        "bot_response": "<p>We do have additional paradigms available to test, and we welcome feedback on these. <br>Please navigate to the<strong><em> </em></strong><a href='https://nordicneurolab.circle.so/c/paradigms-nordicaktiva/' target='_blank'><strong><em>'Paradigm Exchange</em></strong></a><strong><em>' </em></strong>page on NNL Forum to access these paradigms. <br><br>If you have any further needs or suggestions, please get in touch via <a href='mailto:applicationsupport@nordicneurolab.com'>applicationsupport@nordicneurolab.com.</a></p>",
         "required_words": ["other", "paradigms", "not", "library"],
 
         "Questin": "Do you have other paradigms which are not in the library?",
@@ -161,188 +161,280 @@
         "Category / categories": "responsegrips"
     },
     {
+        "response_type": "question",
+        "user_input": ["nordicaktiva", "support", "devices", "other", "vendors"],
+        "bot_response": "<p>No, every input to nordicAktiva has to come from the NNL SyncBox serial port.</p>",
+        "required_words": ["nordicaktiva", "support", "devices", "other", "vendors"],
+
         "Questin": "Does nordicAktiva support devices from other vendors?",
         "Item ID": "6479ea637f0667b3113f47de",
         "Created On": "Fri Jun 02 2023 13:10:59 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:33 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>No, every input to nordicAktiva has to come from the NNL SyncBox serial port.</p><p>\u200d</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["eye", "tracking", "eyetrackeing", "visualsystem", "hd", "goggles"],
+        "bot_response": "<p>The VisualSystem HD goggles feature eye-tracking cameras only, and different users may deploy their own choice of eye-tracking analysis software. However, we do partner with Arrington Research Inc, who offer the ViewPoint eye-tracking solution, which we sell for use with the VisualSystem HD. We have created a<strong><em> </em></strong><a href='https://www.nordicneurolab.com/resources#user-guides'><strong><em>user guide</em></strong></a> on our website, where you can find all the necessary steps for integrating ViewPoint with the VisualSystem HD goggles.</p>",
+        "required_words": ["eye", "tracking", "visualsystem"],
+        
         "Questin": "How can eye tracking be done with the VisualSystem HD goggles?",
         "Item ID": "6490420b60e45d019b9197b7",
         "Created On": "Mon Jun 19 2023 11:54:51 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:36:34 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "visualsystemhd",
-        "bot_response": "<p id=\"\">The VisualSystem HD goggles feature eye-tracking cameras only, and different users may deploy their own choice of eye-tracking analysis software. However, we do partner with Arrington Research Inc, who offer the ViewPoint eye-tracking solution, which we sell l for use with the VisualSystem HD. We have created a<strong><em> </em></strong><a href=\"https://www.nordicneurolab.com/resources#user-guides\" id=\"\"><strong><em>user guide</em></strong></a> on our website, where you can find all the necessary steps for integrating ViewPoint with the VisualSystem HD goggles.</p>"
+        "Category / categories": "visualsystemhd"
     },
     {
+        "response_type": "question",
+        "user_input": ["add", "local", "radio", "stations", "nordiccomfortplayer"],
+        "bot_response": "<p>Follow these steps: </p><ol><li>First you need to know the URL address of the radio station you would like to add. Note that the URL address needs to be exactly the streaming link, like 'http://http-live.sr.se/p1-mp3-192' in the example below. Otherwise, it won't be played when you select it in nordicComfortPlayer. </li><br><li>Go to C:\\Users\\AppData\\Local\\ComfortPlayer and open 'settigs.json' file with Notepad. Scroll down and find the section where all the radio stations are located. The section starts with the syntax \"radio\". &nbsp;</li><br><li>Under this section you can add you desired radio station. Below is a syntax example that shows how the URL should be added. In front of \"title\", you can give a name to the new radio station, which will then appear in the media library of nordicComfortPlayer. </li></ol><p> &nbsp; &nbsp; &nbsp; &nbsp;{ </p><p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\"title\": \"<strong>Sverige Radio P1</strong>\", </p><p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\"url\": \"<strong>http://http-live.sr.se/p1-mp3-192</strong>\" </p><p> &nbsp; &nbsp; &nbsp; &nbsp;} </p><ol start='4'><li>Save the changes and start nordicComfortPlayer. You should be able to see and play the new radio station. </li></ol>",
+        "required_words": ["add", "radio", "nordiccomfortplayer"],
+
         "Questin": "How can I add local radio stations to nordicComfortPlayer? ",
         "Item ID": "649040f41b96db9abe2e2728",
         "Created On": "Mon Jun 19 2023 11:50:12 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:05 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p id=\"\">Follow these steps: </p><p id=\"\"> </p><ol start=\"1\" id=\"\"><li>First you need to know the URL address of the radio station you would like to add. Note that the URL address needs to be exactly the streaming link, like \u2018http://http-live.sr.se/p1-mp3-192\u2019 in the example below. Otherwise, it won\u2019t be played when you select it in nordicComfortPlayer. </li></ol><ol start=\"2\" id=\"\"><li>Go to C:\\Users\\AppData\\Local\\ComfortPlayer and open \u2018settigs.json\u2019 file with Notepad. Scroll down and find the section where all the radio stations are located. The section starts with the syntax \"radio\". &nbsp;</li></ol><ol start=\"3\" id=\"\"><li>Under this section you can add you desired radio station. Below is a syntax example that shows how the URL should be added. In front of \"title\", you can give a name to the new radio station, which will then appear in the media library of nordicComfortPlayer. </li></ol><p id=\"\"> &nbsp; &nbsp; &nbsp; &nbsp;{ </p><p id=\"\"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\"title\": \"<strong id=\"\">Sverige Radio P1</strong>\", </p><p id=\"\"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\"url\": \"<strong id=\"\">http://http-live.sr.se/p1-mp3-192</strong>\" </p><p id=\"\"> &nbsp; &nbsp; &nbsp; &nbsp;}, </p><ol start=\"4\" id=\"\"><li>Save the changes and start nordicComfortPlayer. You should be able to see and play the new radio station. </li></ol><p id=\"\"> </p><p>\u200d</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["change", "image", "orientation", "lcd", "monitor"],
+        "bot_response": "<p>There are two ways to change the orientation of the image: </p><ul><li>If you have nordicComfortPlayer, open the app and select one of the icons on the top right according to whether the screen is at the patient's head or feet, and whether you have a single or double mirror. </li><li>If you do not have the nordicComfortPlayer app, there are flip/rotate controls on the LCD as well. You can use the touch buttons on the front top left corner of the LCD to adjust the orientation (see the table below for the functionality of the touch buttons). Activate the on-screen menu and then navigate to and enter the 'other' submenu. Then enter the 'Display rotation' option and choose one of the four orientation options (normal, H, V, H/V). The selected setting is stored and will be retained after power cycling. </li></ul><figure data-rt-type='image' data-rt-align='center'><div><img alt='A black rectangle in a rectangle frameDescription automatically generated with low confidence' src='https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe17ae068274b0e5d4c_11ad6f03.jpeg' width='auto' height='auto' loading='auto'></div><figcaption>Activate/Exit Menu</figcaption></figure><figure data-rt-type='image' data-rt-align='center'><div><img alt='A black arrow pointing to the leftDescription automatically generated with medium confidence' src='https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe1e339265f3c18876a_f21c974c.jpeg' width='auto' height='auto' loading='auto'></div><figcaption>Enter submenu</figcaption></figure><figure data-rt-type='image' data-rt-align='center'><div><img alt='A black triangle on a white backgroundDescription automatically generated' src='https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe1e339265f3c18877a_4f28223d.jpeg' width='auto' height='auto' loading='auto'></div><figcaption>Move up in menu</figcaption></figure><figure data-rt-type='image' data-rt-align='center'><div><img alt='A black triangle on a white backgroundDescription automatically generated' src='https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe1014cc972f97141dd_ead42cd4.jpeg' width='auto' height='auto' loading='auto'></div><figcaption>Move down in menu</figcaption></figure><p>In both approaches, always check with patients if they can see everything in the correct orientation.</p>",
+        "required_words": ["image", "orientation", "monitor"],
+
         "Questin": "How can I change the image orientation on the LCD monitor?",
         "Item ID": "6490404ae339265f3c18d42d",
         "Created On": "Mon Jun 19 2023 11:47:22 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:46 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "inroomviewingdevice",
-        "bot_response": "<p id=\"\">There are two ways to change the orientation of the image: </p><ul id=\"\"><li>If you have nordicComfortPlayer, open the app and select one of the icons on the top right according to whether the screen is at the patient\u2019s head or feet, and whether you have a single or double mirror. </li><li>If you do not have the nordicComfortPlayer app, there are flip/rotate controls on the LCD as well. You can use the touch buttons on the front top left corner of the LCD to adjust the orientation (see the table below for the functionality of the touch buttons). Activate the on-screen menu and then navigate to and enter the \u2018other\u2019 submenu. Then enter the \u2018Display rotation\u2019 option and choose one of the four orientation options (normal, H, V, H/V). The selected setting is stored and will be retained after power cycling. </li></ul><p id=\"\"> </p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div><img alt=\"A black rectangle in a rectangle frameDescription automatically generated with low confidence\" src=\"https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe17ae068274b0e5d4c_11ad6f03.jpeg\" id=\"\" width=\"auto\" height=\"auto\" loading=\"auto\"></div><figcaption>Activate/Exit Menu</figcaption></figure><p id=\"\"> </p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div><img alt=\"A black arrow pointing to the leftDescription automatically generated with medium confidence\" src=\"https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe1e339265f3c18876a_f21c974c.jpeg\" id=\"\" width=\"auto\" height=\"auto\" loading=\"auto\"></div><figcaption>Enter submenu</figcaption></figure><p id=\"\"> </p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div><img alt=\"A black triangle on a white backgroundDescription automatically generated\" src=\"https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe1e339265f3c18877a_4f28223d.jpeg\" id=\"\" width=\"auto\" height=\"auto\" loading=\"auto\"></div><figcaption>Move up in menu</figcaption></figure><p id=\"\"> </p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div><img alt=\"A black triangle on a white backgroundDescription automatically generated\" src=\"https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64903fe1014cc972f97141dd_ead42cd4.jpeg\" id=\"\" width=\"auto\" height=\"auto\" loading=\"auto\"></div><figcaption>Move down in menu</figcaption></figure><p id=\"\"> </p><p id=\"\"> </p><p>\u200d</p><p id=\"\">In both approaches, always check with patients if they can see everything in the correct orientation.</p><p>\u200d</p>"
+        "Category / categories": "inroomviewingdevice"
     },
     {
+        "response_type": "question",
+        "user_input": ["paradigms", "paradigm", "available", "other", "nnl", "forum"],
+        "bot_response": "<p>We would love for you to share your own paradigms on our forum and can help you link up with other interested users who may be working on similar experiments. Please zip your paradigm folder and<strong><em> </em></strong><a href='https://nordicneurolab.circle.so/c/paradigms-nordicaktiva/' target='_blank'><strong><em>upload it here</em></strong></a><strong><em>. </em></strong>We will then be in touch.</p>",
+        "required_words": ["paradigms", "paradigm", "available", "forum"],
+
         "Questin": "How can I make my paradigms available to others on the NNL forum?",
         "Item ID": "6479ed4c3379d995514d6964",
         "Created On": "Fri Jun 02 2023 13:23:24 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:36 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">We would love for you to share your own paradigms on our forum and can help you link up with other interested users who may be working on similar experiments. Please zip your paradigm folder and<strong><em> </em></strong><a href=\"https://nordicneurolab.circle.so/c/paradigms-nordicaktiva/\" id=\"\"><strong><em>upload it here</em></strong></a><strong><em>. </em></strong>We will then be in touch.</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["quickly", "switch", "nordicaktiva", "nordiccomfortplayer", "running"],
+        "bot_response": "<p>nordicComfortPlayer and nordicAktiva should not be open at the same time, as this may result in conflicts with the in-room display settings. </p>",
+        "required_words": ["quickly", "switch", "nordicaktiva", "nordiccomfortplayer"],
+
         "Questin": "How can I quickly switch to nordicAktiva when nordicComfortPlayer is running? ",
         "Item ID": "6490410b377c4f25b1f4fa65",
         "Created On": "Mon Jun 19 2023 11:50:35 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:01 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p id=\"\">nordicComfortPlayer and nordicAktiva should not be open at the same time, as this may result in conflicts with the in-room display settings. </p><p id=\"\">\u200d</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["send", "data", "pacs", "nordicbrainex"],
+        "bot_response": "<p>The nordicBrainEx workstation needs to be registered in your PACS system. The network information of the nordicBrainEx workstation can be found in nordicBrainEx under File/Database/Settings tab and then under the 'Database' section.</p>",
+        "required_words": ["send", "data", "pacs", "nordicbrainex"],
+
         "Questin": "How can I send data from PACS to nordicBrainEx? ",
         "Item ID": "64903c3d6ac2476aabedd4d9",
         "Created On": "Mon Jun 19 2023 11:30:05 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:15 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicbrainex",
-        "bot_response": "<p>The nordicBrainEx workstation needs to be registered in your PACS system. The network information of the nordicBrainEx workstation can be found in nordicBrainEx under File/Database/Settings tab and then under the \u2018Database\u2019 section.</p>"
+        "Category / categories": "nordicbrainex"
     },
     {
+        "response_type": "question",
+        "user_input": ["suggest", "change", "nordicaktiva", "paradigm", "library"],
+        "bot_response": "<p>Your feedback is very much appreciated! <br>Please get in touch via <a href=\"mailto:applicationsupport@nordicneurolab.com\">applicationsupport@nordicneurolab.com</a> if you see that something is not quite as it should be or doesn't meet your needs.</p>",
+        "required_words": ["suggest", "change", "nordicaktiva", "paradigm", "library"],
+
         "Questin": "How can I suggest a change to the nordicAktiva paradigm library?",
         "Item ID": "6479ed71ed6a8ec01b158ba0",
         "Created On": "Fri Jun 02 2023 13:24:01 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:31 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>Your feedback is very much appreciated! <br>Please get in touch via <a href=\"mailto:applicationsupport@nordicneurolab.com\">applicationsupport@nordicneurolab.com</a> if you see that something is not quite as it should be or doesn\u2019t meet your needs.</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["close", "lcd", "monitor", "positioned", "mr-bore"],
+        "bot_response": "<p>Bringing the LCD monitor closer to the bore than the legs of the stand allow will introduce a high potential risk of damaging the LCD. As a rule of thumb, 10 cm clearance is recommended between the wheels of the LCD stand and the end of the bore.</p>",
+        "required_words": ["close", "lcd", "monitor", "positioned", "mr-bore"],
+
         "Questin": "How close can the LCD monitor be positioned to the MR-bore? ",
         "Item ID": "6490406f68273cfaabfe0982",
         "Created On": "Mon Jun 19 2023 11:47:59 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:40 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "inroomviewingdevice",
-        "bot_response": "<p>Bringing the LCD monitor closer to the bore than the legs of the stand allow will introduce a high potential risk of damaging the LCD. As a rule of thumb, 10 cm clearance is recommended between the wheels of the LCD stand and the end of the bore.</p>"
+        "Category / categories": "inroomviewingdevice"
     },
     {
+        "response_type": "question",
+        "user_input": ["create", "design", "file", "feed", "nordicbrainex"],
+        "bot_response": "<p>Once the paradigm has completed, click 'Save Results'. Then via the File menu, click on 'Browse log and design files'. The design files will be marked as '.des' with the date and time appended. These can be transferred to your nordicBrainEx workstation by USB drive or similar.</p>",
+        "required_words": ["create", "design", "file", "feed", "nordicbrainex"],
+
         "Questin": "How do I create a design file to feed into nordicBrainEx?",
         "Item ID": "6479ed9d295022221a64097b",
         "Created On": "Fri Jun 02 2023 13:24:45 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:23 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>Once the paradigm has completed, click \u2018Save Results\u2019. Then via the File menu, click on \u2018Browse log and design files\u2019. The design files will be marked as \u2018.des\u2019 with the date and time appended. These can be transferred to your nordicBrainEx workstation by USB drive or similar.</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["nordicbrainex", "co-registration", "motion", "correction"],
+        "bot_response": "<p>Motion correction and Co-registration in nordicBrainEx are based on rigid body transformation. &nbsp;Co-registration aligns the dynamic images with the structural image. Motion correction on the other hand, aligns all the dynamic image to the first volume within the dynamic series, and generates the translation and rotation parameters.</p>",
+        "required_words": ["nordicbrainex", "co-registration", "motion", "correction"],
+
         "Questin": "How does nordicBrainEx do the Co-registration and motion correction?",
         "Item ID": "64903cb8943d12083b0ceca7",
         "Created On": "Mon Jun 19 2023 11:32:08 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:06 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicbrainex",
-        "bot_response": "<p>Motion correction and Co-registration in nordicBrainEx are based on rigid body transformation. &nbsp;Co-registration aligns the dynamic images with the structural image. Motion correction on the other hand, aligns all the dynamic image to the first volume within the dynamic series, and generates the translation and rotation parameters.</p>"
+        "Category / categories": "nordicbrainex"
     },
     {
+        "response_type": "question",
+        "user_input": ["nordiccomfortsolution", "improve", "patient", "experience", "mri", "scans"],
+        "bot_response": "<p>The nordicComfortSolution is designed to help reduce anxiety and discomfort during MRI scans by providing patients with a distracting and enjoyable experience. By providing patients with entertainment options, the system can help them relax and remain still during the scanning process, which can lead to better imaging results.</p>",
+        "required_words": ["nordiccomfortsolution", "improve", "patient", "experience", "mri", "scans"],
+
         "Questin": "How does the nordicComfortSolution improve the patient experience during MRI scans?",
         "Item ID": "644a2982225ef88ab40d2393",
         "Created On": "Thu Apr 27 2023 07:51:30 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:41:28 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p>The nordicComfortSolution is designed to help reduce anxiety and discomfort during MRI scans by providing patients with a distracting and enjoyable experience. By providing patients with entertainment options, the system can help them relax and remain still during the scanning process, which can lead to better imaging results.</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["how","nordiccomfortsolution", "work"],
+        "bot_response": "<p>The nordicComfortSolution is a hardware- and software-based system. You have the MR compatible LCD installed inside the MR room that displays the content and it is connected to a computer tablet that can be controlled from inside the Control Room. The radiographer can select the entertainment options from a user-friendly interface and the patient gets to enjoy them during the scan.</p>",
+        "required_words": ["nordiccomfortsolution", "work"],
+
         "Questin": "How does the nordicComfortSolution work?",
         "Item ID": "63fdd754e20c7572c375f7bc",
         "Created On": "Tue Feb 28 2023 10:28:36 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:41:40 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p id=\"\">The nordicComfortSolution is a hardware- and software-based system. You have the MR compatible LCD installed inside the MR room that displays the content and it is connected to a computer tablet that can be controlled from inside the Control Room. The radiographer can select the entertainment options from a user-friendly interface and the patient gets to enjoy them during the scan.</p><p id=\"\">\u200d</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["leakage", "correction", "nordicbrainex", "dsc"],
+        "bot_response": "<p>Leakage correction is very important for DSC perfusion analysis, especially in relation to tumors.Tumors have leaky vasculature and so the contrast agent leaks into extravascular extracellular space and accumulates there.The leakage can lead to over- or underestimation of the cerebral blood volume (CBV), and therefore it is important to correct it. The leakage correction for DSC in nordicBrainEx is based on the residual function described in this article by<strong><em> </em></strong><a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3208149/'><strong><em>Bjørnerud et al. (2011)</em></strong></a><strong><em>.</em></strong> In brief, the method uses the tail of the residual function to estimate the leakage, and unlike the commonly used Weiskoff method, it does not assume a constant mean transit time for all tissue types. More information can be found <a href='http://downloads.nordicneurolab.com/SW/nBX/Tutorials/Tutorial%20-%20DSC.pdf'><strong><em>here</em></strong></a><strong><em>.</em></strong></p>",
+        "required_words": ["leakage", "correction", "nordicbrainex", "dsc"],
+
         "Questin": "How is leakage correction done in nordicBrainEx DSC?",
         "Item ID": "64903ed291b8fc37815e0a42",
         "Created On": "Mon Jun 19 2023 11:41:06 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Tue Jun 27 2023 12:39:46 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicbrainex",
-        "bot_response": "<p id=\"\">Leakage correction is very important for DSC perfusion analysis, especially in relation to tumors.\u202fTumors have leaky vasculature and so the contrast agent leaks into extravascular extracellular space and accumulates there.\u202fThe leakage can lead to over- or underestimation of the cerebral blood volume (CBV), and therefore it is important to correct it. The leakage correction for DSC in nordicBrainEx is based on the residual function described in this article by<strong id=\"\"><em id=\"\"> </em></strong><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3208149/\" id=\"\"><strong id=\"\"><em id=\"\">Bj\u00f8rnerud et al. (2011)</em></strong></a><strong id=\"\"><em id=\"\">.</em></strong> In brief, the method uses the tail of the residual function to estimate the leakage, and unlike the commonly used Weiskoff method, it does not assume a constant mean transit time for all tissue types. More information can be found <a href=\"http://downloads.nordicneurolab.com/SW/nBX/Tutorials/Tutorial%20-%20DSC.pdf\" id=\"\"><strong id=\"\"><em id=\"\">here</em></strong></a><strong id=\"\"><em id=\"\">.</em></strong></p><p id=\"\">\u200d</p>"
+        "Category / categories": "nordicbrainex"
     },
     {
+        "response_type": "question",
+        "user_input": ["normalization", "nordicbrainex", "dsc"],
+        "bot_response": "<p>When normalization is selected, nordicBrainEx normalizes CBV and CBF maps to the normal appearing white and grey matter. The software segments out tumor, blood vessels, and normal-appearing grey and white matter, before dividing the CBV and CBF by the average value within the normal-appearing grey and white matter. A VOI can therefore be drawn in a relevant area of pathology and the mean value may be taken without manually normalizing to a second VOI placed within normal tissue. It can be used to significantly speed up the reporting workflow. More information can be found <a href='http://downloads.nordicneurolab.com/SW/nBX/Tutorials/Tutorial%20-%20DSC.pdf' target='_blank'><strong><em>here</em></strong></a><strong><em>.</em></strong></p>",
+        "required_words": ["normalization", "nordicbrainex", "dsc"],
+        
         "Questin": "How is normalization done in nordicBrainEx DSC?",
         "Item ID": "64903f06e45565de58355617",
         "Created On": "Mon Jun 19 2023 11:41:58 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:38:53 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicbrainex",
-        "bot_response": "<p id=\"\">When normalization is selected, nordicBrainEx normalizes CBV and CBF maps to the normal appearing white and grey matter. The software segments out tumor, blood vessels, and normal-appearing grey and white matter, before dividing the CBV and CBF by the average value within the normal-appearing grey and white matter. A VOI can therefore be drawn in a relevant area of pathology and the mean value may be taken without manually normalizing to a second VOI placed within normal tissue. It can be used to significantly speed up the reporting workflow. More information can be found <a href=\"http://downloads.nordicneurolab.com/SW/nBX/Tutorials/Tutorial%20-%20DSC.pdf\" id=\"\"><strong><em>here</em></strong></a><strong><em>.</em></strong></p>"
+        "Category / categories": "nordicbrainex"
     },
     {
+        "response_type": "question",
+        "user_input": ["permeability", "nordicbrainex", "dce"],
+        "bot_response": "<p>The DCE module uses a two-compartment exchange (TCx) pharmacokinetic model<strong><em> </em></strong><a href='https://onlinelibrary.wiley.com/doi/10.1002/mrm.22005' target='_blank'><strong><em>(Sourbron S, 2009)</em></strong></a><strong><em>.</em></strong> In brief, the model can be illustrated in the following way: </p><figure><div><img alt='A picture containing text, clockDescription automatically generated' src='https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64787770bf584c4b2b4c0a68_aada4ef4.jpeg' width='auto' height='auto' loading='auto'></div></figure><p> </p><p>Where the contrast agent (C) enters the capillary volume due to tissue blood flow (F) and is initially distributed in the tissue plasma volume (Vp), but is gradually equilibrated to the extracellular, extravascular space with volume fraction of Ve, at a rate determined by rate constants Ktrans and kep. <br><br>More information can be found <a href='http://downloads.nordicneurolab.com/SW/nBX/Tutorials/Tutorial%20-%20DCE.pdf' target='_blank'><strong><em>here.</em></strong></a><strong><em> </em></strong></p>",
+        "required_words": ["permeability", "nordicbrainex", "dce"],
+
         "Questin": "How is permeability calculated in nordicBrainEx DCE?",
         "Item ID": "64903f55e0d44acbfc4edbdc",
         "Created On": "Mon Jun 19 2023 11:43:17 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Tue Jun 27 2023 12:44:25 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicbrainex",
-        "bot_response": "<p id=\"\">The DCE module uses a two-compartment exchange (TCx) pharmacokinetic model<strong id=\"\"><em id=\"\"> </em></strong><a href=\"https://onlinelibrary.wiley.com/doi/10.1002/mrm.22005\" id=\"\"><strong id=\"\"><em id=\"\">(Sourbron S, 2009)</em></strong></a><strong id=\"\"><em id=\"\">.</em></strong> In brief, the model can be illustrated in the following way: </p><figure id=\"\" class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\"><div id=\"\"><img alt=\"A picture containing text, clockDescription automatically generated\" src=\"https://uploads-ssl.webflow.com/617a905810208b1c7db8ee22/64787770bf584c4b2b4c0a68_aada4ef4.jpeg\" id=\"\" width=\"auto\" height=\"auto\" loading=\"auto\"></div></figure><p id=\"\"> </p><p id=\"\">Where the contrast agent (C) enters the capillary volume due to tissue blood flow (F) and is initially distributed in the tissue plasma volume (Vp), but is gradually equilibrated to the extracellular, extravascular space with volume fraction of Ve, at a rate determined by rate constants Ktrans and kep. <br><br>More information can be found <a href=\"http://downloads.nordicneurolab.com/SW/nBX/Tutorials/Tutorial%20-%20DCE.pdf\"><strong><em>here.</em></strong></a><strong><em> </em></strong></p><p id=\"\">\u200d</p>"
+        "Category / categories": "nordicbrainex"
     },
     {
-        "Questin": "I don\u2019t see the patient camera feed. What should I do? ",
+        "response_type": "question",
+        "user_input": ["don't", "see", "patient", "camera", "feed"],
+        "bot_response": "<p>Go to nordicComfortPlayer's settings (gear icon on the lower-left hand side), select the correct camera from the dropdown menu, and set it as default. The patient camera is usually labeled as 'USB CAMERA' in the dropdown menu list. When this is done, select the camera icon on the upper-left hand side. You should then be able to see the camera feed.</p>",
+        "required_words": ["don't", "see", "patient", "camera", "feed"],
+
+        "Questin": "I don't see the patient camera feed. What should I do? ",
         "Item ID": "6490409f014cc972f97211bd",
         "Created On": "Mon Jun 19 2023 11:48:47 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:19 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p>Go to nordicComfortPlayer\u2019s settings (gear icon on the lower-left hand side), select the correct camera from the dropdown menu, and set it as default. The patient camera is usually labeled as \u2018USB CAMERA\u2019 in the dropdown menu list. When this is done, select the camera icon on the upper-left hand side. You should then be able to see the camera feed.</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["stop", "experiment", "before", "scan", "completed"],
+        "bot_response": "<p>Yes! If you need to stop nordicAktiva manually, you can still manually proceed to the final screen using the forward arrow, where you can then 'Save results' as normal.</p>",
+        "required_words": ["stop", "experiment", "before", "scan"],
+
         "Questin": "I had to stop my experiment before the scan was completed. Can I still save my results?",
         "Item ID": "6479eac75c8a5811f95a82e7",
         "Created On": "Fri Jun 02 2023 13:12:39 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:17 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>Yes! If you need to stop nordicAktiva manually, you can still manually proceed to the final screen using the forward arrow, where you can then \u2018Save results\u2019 as normal.</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
-        "Questin": "I have created a new paradigm. Why can\u2019t I see it in the library?",
+        "response_type": "question",
+        "user_input": ["created", "paradigm,", "see", "library"],
+        "bot_response": "<p>Make sure the 'main' file name is identical to the name of the paradigm folder, then restart or refresh nordicAktiva (via the red button on the top right).</p>",
+        "required_words": ["created", "paradigm,", "see", "library"],
+
+        "Questin": "I have created a new paradigm. Why can't I see it in the library?",
         "Item ID": "6479ea96ebd5a269a1ce59d1",
         "Created On": "Fri Jun 02 2023 13:11:50 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:25 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>Make sure the \u2018main\u2019 file name is identical to the name of the paradigm folder, then restart or refresh nordicAktiva (via the red button on the top right).</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["possible", "make", "event-related", "paradigms", "nordicaktiva"],
+        "bot_response": "<p>Paradigms in nordicAktiva can be made up of blocks, individual trials, or a combination of the two. This means you can create trials which are short 'events', with flexible timing, thus making a form of event-related paradigm. For further information and support please consult our <a href='https://www.nordicneurolab.com/help-all/nordicaktiva' target='_blank'><strong><em>paradigm syntax documentation</em></strong>.</a><br></p><div></div>",
+        "required_words": ["possible", "make", "event-related", "paradigms", "nordicaktiva"],
+
         "Questin": "Is it possible to make event-related paradigms in nordicAktiva? ",
         "Item ID": "647874c8742d956606769cd9",
         "Created On": "Thu Jun 01 2023 10:36:56 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:43 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">Paradigms in nordicAktiva can be made up of blocks, individual trials, or a combination of the two. This means you can create trials which are short \u2018events\u2019, with flexible timing, thus making a form of event-related paradigm. For further information and support please consult our <a href=\"https://www.nordicneurolab.com/help-all/nordicaktiva\" target=\"_blank\"><strong id=\"\"><em id=\"\">paradigm syntax documentation</em></strong>.</a><br></p><div id=\"\"></div>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["nordiccomfortsolution", "compatible", "mri", "scanners"],
+        "bot_response": "<p>The nordicComfortSolution is compatible with a wide range of MRI scanners,including 0.55T, 1.5T, 3T, and 7T scanners. <br>It has been tested and approved on scanners from Siemens Healthineers, GE Healthcare, and Philips.</p>",
+        "required_words": ["nordiccomfortsolution", "compatible", "mri", "scanners"],
+
         "Questin": "Is the nordicComfortSolution compatible with all types of MRI scanners?",
         "Item ID": "644a2abfed8b6c6b4ec4c73f",
         "Created On": "Thu Apr 27 2023 07:56:47 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:41:17 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p>The nordicComfortSolution is compatible with a wide range of MRI scanners,including 0.55T, 1.5T, 3T, and 7T scanners. <br>It has been tested and approved on scanners from Siemens Healthineers, GE Healthcare, and Philips.</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["easy", "install", "maintain", "nordiccomfortsolution"],
+        "bot_response": "<p>The nordicComfortSolution is designed with easy installation and maintenance in mind. The software is preinstalled on a tablet, which is placed in the control room. The InroomViewingDevice is mounted on a stand, with wheels, and can be rolled into the MRI room. The tablet and the InroomViewingDevice, which provides the patient with the entertainment, are connected via a fiber optic cable that runs through a wave-guide.</p>",
+        "required_words": ["easy", "install", "maintain", "nordiccomfortsolution"],
+
         "Questin": "Is the nordicComfortSolution easy to install and maintain?",
         "Item ID": "644a2a90df3d986ca7baffdc",
         "Created On": "Thu Apr 27 2023 07:56:00 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:41:24 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p id=\"\">The nordicComfortSolution is designed with easy installation and maintenance in mind. The software is preinstalled on a tablet, which is placed in the control room. The InroomViewingDevice is mounted on a stand, with wheels, and can be rolled into the MRI room. The tablet and the InroomViewingDevice, which provides the patient with the entertainment, are connected via a fiber optic cable that runs through a wave-guide.</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["nordicaktiva", "warn", "lost", "connection", "syncbox"],
+        "bot_response": "<p>Ensure your Virtual COM Port drivers are up to date. <br>Information on the required drivers is found <a href='https://ftdichip.com/drivers/vcp-drivers/' target='_blank'><strong><em>here.</em></strong></a><strong><em> </em></strong></p>",
+        "required_words": ["nordicaktiva", "warn", "lost", "connection", "syncbox"],
+
         "Questin": "Why does nordicAktiva frequently warn that it has lost connection to the SyncBox. Is there a problem with the connection?",
         "Item ID": "6479eb0e317df49f07019f7f",
         "Created On": "Fri Jun 02 2023 13:13:50 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Fri Jul 21 2023 09:31:16 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">Ensure your Virtual COM Port drivers are up to date. <br>Information on the required drivers is found <a href=\"https://ftdichip.com/drivers/vcp-drivers/\"><strong id=\"\"><em id=\"\">here.</em></strong></a><strong id=\"\"><em id=\"\"> </em></strong></p>"
+        "Category / categories": "nordicaktiva"
     },
     {
         "Questin": "The paradigm language I would like to use is not available. What options do I have? ",
@@ -353,12 +445,12 @@
         "bot_response": "<p id=\"\">We are constantly updating our library and are interested in your needs regarding language implementations. <br>Please contact us <a href=\"mailto:applicationsupport@nordicneurolab.com\">applicationsupport@nordicneurolab.com</a> to make a request or to discuss how you can implement your required language yourself.</p>"
     },
     {
-        "Questin": "The SyncBox doesn\u2019t send the \u2018s\u2019 character to the stimulation PC. What should I do? ",
+        "Questin": "The SyncBox doesn't send the 's' character to the stimulation PC. What should I do? ",
         "Item ID": "64942dd8aa8922d3d149f602",
         "Created On": "Thu Jun 22 2023 11:17:44 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Thu Jun 22 2023 11:17:44 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "syncbox",
-        "bot_response": "<p>If the connection between the SyncBox and PC is established but the \u2018s\u2019 char is not sent, you can factory reset the SyncBox. The factory reset option can be found on the on-screen \u2018Option Menu\u2019 of the SyncBox. After resetting the SyncBox, reboot the PC and all the associated hardware including the SyncBox.</p>"
+        "bot_response": "<p>If the connection between the SyncBox and PC is established but the 's' char is not sent, you can factory reset the SyncBox. The factory reset option can be found on the on-screen 'Option Menu' of the SyncBox. After resetting the SyncBox, reboot the PC and all the associated hardware including the SyncBox.</p>"
     },
     {
         "Questin": "What are the pros and cons of DSC and DCE?",
@@ -366,23 +458,23 @@
         "Created On": "Mon Jun 19 2023 11:32:31 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:00 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "nordicbrainex",
-        "bot_response": "<p>DSC uses T2* based perfusion, while DCE uses T1 based perfusion. While DSC has a higher contrast agent sensitivity and higher temporal resolution, DCE offers better image quality and more linear dose-response. As DCE takes longer than DSC, its acquisition doesn\u2019t always cover the whole brain but instead a few slices are acquired around the tumor to save time.</p>"
+        "bot_response": "<p>DSC uses T2* based perfusion, while DCE uses T1 based perfusion. While DSC has a higher contrast agent sensitivity and higher temporal resolution, DCE offers better image quality and more linear dose-response. As DCE takes longer than DSC, its acquisition doesn't always cover the whole brain but instead a few slices are acquired around the tumor to save time.</p>"
     },
     {
-        "Questin": "What can I do if nordicAktiva does not proceed to 'Save results\u2019 after the paradigm finishes?",
+        "Questin": "What can I do if nordicAktiva does not proceed to 'Save results' after the paradigm finishes?",
         "Item ID": "6479eab548cf9cd1657db061",
         "Created On": "Fri Jun 02 2023 13:12:21 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:21 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "nordicaktiva",
-        "bot_response": "<p>This might sometimes happen when using the \u2018Triggers on every block\u2019 option in the Scanner Settings. If you would like to save your results (log and design files) on completion of a paradigm, but nordicAktiva remains on the \u2018Run paradigm\u2019 screen, you can manually proceed to the \u2018Save results\u2019 screen using the forward arrow.</p>"
+        "bot_response": "<p>This might sometimes happen when using the 'Triggers on every block' option in the Scanner Settings. If you would like to save your results (log and design files) on completion of a paradigm, but nordicAktiva remains on the 'Run paradigm' screen, you can manually proceed to the 'Save results' screen using the forward arrow.</p>"
     },
     {
-        "Questin": "What can I do if nordicAktiva doesn\u2019t recognize the SyncBox?",
+        "Questin": "What can I do if nordicAktiva doesn't recognize the SyncBox?",
         "Item ID": "6479eae763f2aac6863bfad5",
         "Created On": "Fri Jun 02 2023 13:13:11 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:13 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">Try the following steps: <br><br>1. Go to Edit/Settings and under the \u2018SyncBox\u2019 tab click on \u2018Auto detect\u2019. You should then see a message confirming which port the SyncBox is connected to. After confirming this message, you should be able to see the COM port under \u2018Serial/USB port\u2019 dropdown menu. Click on \u2018Apply\u2019 and \u2018Ok\u2019.</p><p id=\"\">2. If it still doesn\u2019t solve the issue, check the connection between the mini USB port on the side of the SyncBox and the USB port of the PC.</p><p id=\"\">3. Verify that the SyncBox is listed correctly in the \u2018Device Manager\u2019 on Windows. Restart the SyncBox and nordicAktiva PC and re-check the above settings in nordicAktiva.</p><p>\u200d</p>"
+        "bot_response": "<p id=\"\">Try the following steps: <br><br>1. Go to Edit/Settings and under the 'SyncBox' tab click on 'Auto detect'. You should then see a message confirming which port the SyncBox is connected to. After confirming this message, you should be able to see the COM port under 'Serial/USB port' dropdown menu. Click on 'Apply' and 'Ok'.</p><p id=\"\">2. If it still doesn't solve the issue, check the connection between the mini USB port on the side of the SyncBox and the USB port of the PC.</p><p id=\"\">3. Verify that the SyncBox is listed correctly in the 'Device Manager' on Windows. Restart the SyncBox and nordicAktiva PC and re-check the above settings in nordicAktiva.</p><p>\u200d</p>"
     },
     {
         "Questin": "What is HID mode and how can I operate the SyncBox in this mode? ",
@@ -390,7 +482,7 @@
         "Created On": "Thu Jun 22 2023 11:16:13 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Thu Jun 22 2023 11:16:13 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "syncbox",
-        "bot_response": "<p>Using the USB cable, SyncBox versions 3.2.0 and older can be recognized by the stimulus presentation PC as a Human Interface Device (HID)/keyboard. The version of the SyncBox can be found on the label underneath. When operating in the HID mode, the SyncBox sends out the letter \u2018s\u2019 to the stimulus presentation PC, when a trigger is received from the MR scanner. The \u2018HID\u2019 mode needs to be set in the \u2018Options menu\u2019 of the SyncBox, but unlike serial mode, no driver is required here.</p>"
+        "bot_response": "<p>Using the USB cable, SyncBox versions 3.2.0 and older can be recognized by the stimulus presentation PC as a Human Interface Device (HID)/keyboard. The version of the SyncBox can be found on the label underneath. When operating in the HID mode, the SyncBox sends out the letter 's' to the stimulus presentation PC, when a trigger is received from the MR scanner. The 'HID' mode needs to be set in the 'Options menu' of the SyncBox, but unlike serial mode, no driver is required here.</p>"
     },
     {
         "Questin": "What is serial mode and how can I set up the SyncBox in this mode? ",
@@ -398,7 +490,7 @@
         "Created On": "Mon Jun 19 2023 11:44:06 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Tue Jun 27 2023 12:43:01 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "syncbox",
-        "bot_response": "<p id=\"\">Serial communication can be established by connecting the mini-USB port on the side of the SyncBox to a USB port on the stimulus presentation PC, which allows for two-way communication between them. In serial mode, the SyncBox can be completely controlled by the stimulus presentation PC and sends out the ASCII code of the character \u2018s\u2019, when it receives a trigger from the scanner. For serial communication, the SyncBox needs to be set to \u2018Serial\u2019 using its on-screen \u2018Options menu\u2019. In addition, to operate the SyncBox in serial mode via USB, Virtual COM Port drivers need to be installed. Make sure that the updated drivers are installed and verify that the SyncBox is listed correctly in the \u2018Device Manager\u2019 on Windows. The latest driver can be downloaded from <a href=\"https://ftdichip.com/drivers/vcp-drivers/\"><strong id=\"\"><em id=\"\">this link.</em></strong></a><br></p>"
+        "bot_response": "<p id=\"\">Serial communication can be established by connecting the mini-USB port on the side of the SyncBox to a USB port on the stimulus presentation PC, which allows for two-way communication between them. In serial mode, the SyncBox can be completely controlled by the stimulus presentation PC and sends out the ASCII code of the character 's', when it receives a trigger from the scanner. For serial communication, the SyncBox needs to be set to 'Serial' using its on-screen 'Options menu'. In addition, to operate the SyncBox in serial mode via USB, Virtual COM Port drivers need to be installed. Make sure that the updated drivers are installed and verify that the SyncBox is listed correctly in the 'Device Manager' on Windows. The latest driver can be downloaded from <a href=\"https://ftdichip.com/drivers/vcp-drivers/\"><strong id=\"\"><em id=\"\">this link.</em></strong></a><br></p>"
     },
     {
         "Questin": "What is the most effective way to rehearse the task with the patient before the exam?",
@@ -406,7 +498,7 @@
         "Created On": "Fri Jun 02 2023 13:19:35 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:56 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">You can sit with the patient and use nordicAktiva in \u2018Preview without SyncBox\u2019 mode.<br>Run through a few slides of the first active block with them and ask them to perform the task overtly with you. <br><br>Alternatively, the <strong><em>\u2018</em></strong><a href=\"https://www.nordicneurolab.com/help-all/nordicaktiva\" id=\"\"><strong><em>fMRI Task Instructions</em></strong></a><strong><em>\u2019</em></strong> document can be used as a guide to sit and explain what the patient can expect. </p><p id=\"\">In either situation, you should ask the patient to rehearse by either showing you the relevant movement they are required to do or giving responses to examples of the language tasks out loud.</p><p id=\"\">\u200d</p><p id=\"\">\u200d</p><p id=\"\">\u200d</p><p id=\"\">\u200d</p>"
+        "bot_response": "<p id=\"\">You can sit with the patient and use nordicAktiva in 'Preview without SyncBox' mode.<br>Run through a few slides of the first active block with them and ask them to perform the task overtly with you. <br><br>Alternatively, the <strong><em>'</em></strong><a href=\"https://www.nordicneurolab.com/help-all/nordicaktiva\" id=\"\"><strong><em>fMRI Task Instructions</em></strong></a><strong><em>'</em></strong> document can be used as a guide to sit and explain what the patient can expect. </p><p id=\"\">In either situation, you should ask the patient to rehearse by either showing you the relevant movement they are required to do or giving responses to examples of the language tasks out loud.</p><p id=\"\">\u200d</p><p id=\"\">\u200d</p><p id=\"\">\u200d</p><p id=\"\">\u200d</p>"
     },
     {
         "Questin": "What other software applications can I use with the VisualSystemHD goggles? ",
@@ -441,7 +533,7 @@
         "bot_response": "<p>We have different adapters available to make it possible for the VisualSystem HD to be mounted on a variety of MR head coils. Feel free to get in touch with us at <a href=\"mailto:applicationsupport@nordicneurolab.com\" target=\"_blank\" id=\"\">applicationsupport@nordicneurolab.com</a>, if you need more information for your setup.</p>"
     },
     {
-        "Questin": "Why can\u2019t my computer detect the nordicBrainEx network license?",
+        "Questin": "Why can't my computer detect the nordicBrainEx network license?",
         "Item ID": "64903c9e377c4f25b1f0c4cd",
         "Created On": "Mon Jun 19 2023 11:31:42 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:10 GMT+0000 (Coordinated Universal Time)",
@@ -454,15 +546,15 @@
         "Created On": "Mon Jun 19 2023 11:44:48 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:38:03 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "inroomviewingdevice",
-        "bot_response": "<p>First check your computer \u2018Display settings\u2019. If the LCD monitor is recognized, you should be able to see two monitors under \u2018System/Display\u2019, one for the stimulation PC and one for the LCD. You can click on \u2018Identify\u2019 to check the allocated number for each display. If you still don\u2019t see any image on the LCD monitor, check the video and power cables to the LCD, power supply (LPS), fiber transmitter (usually placed under the desk in the control room), and nordicAktiva PC (HDMI output), and make sure that they are correctly connected. On the fiber transmitter, both green LED (power) and blue LED (fiber/data) should be on.</p>"
+        "bot_response": "<p>First check your computer 'Display settings'. If the LCD monitor is recognized, you should be able to see two monitors under 'System/Display', one for the stimulation PC and one for the LCD. You can click on 'Identify' to check the allocated number for each display. If you still don't see any image on the LCD monitor, check the video and power cables to the LCD, power supply (LPS), fiber transmitter (usually placed under the desk in the control room), and nordicAktiva PC (HDMI output), and make sure that they are correctly connected. On the fiber transmitter, both green LED (power) and blue LED (fiber/data) should be on.</p>"
     },
     {
-        "Questin": "Why do I see an \u2018Out of Memory\u2019 warning in nordicBrainEx?",
+        "Questin": "Why do I see an 'Out of Memory' warning in nordicBrainEx?",
         "Item ID": "64903b38a64eb3e511b9379c",
         "Created On": "Mon Jun 19 2023 11:25:44 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:19 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "nordicbrainex",
-        "bot_response": "<p>The software is a 32-bit application. If your underlying structural data has a high in-plane resolution, the maps used as overlays may be significantly up-sampled, which can cause memory issues.Under \u2018Settings\u2019, select \u2019Limit displayed resolution in MPR\u2019 to downsample your underlay image to a lower resolution. <br><br>If the problem remains, try loading fewer image series at one time. It may also help to limit the number of BOLD overlays that are visualized at the same time, if they are of a particularly high resolution or remove any derived data once they are saved into the database.</p>"
+        "bot_response": "<p>The software is a 32-bit application. If your underlying structural data has a high in-plane resolution, the maps used as overlays may be significantly up-sampled, which can cause memory issues.Under 'Settings', select 'Limit displayed resolution in MPR' to downsample your underlay image to a lower resolution. <br><br>If the problem remains, try loading fewer image series at one time. It may also help to limit the number of BOLD overlays that are visualized at the same time, if they are of a particularly high resolution or remove any derived data once they are saved into the database.</p>"
     },
     {
         "Questin": "Why does my paradigm not appear to synchronize with BOLD acquisition?",
@@ -470,7 +562,7 @@
         "Created On": "Fri Jun 02 2023 13:11:27 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:29 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">There may be a few reasons.</p><p id=\"\">\u00b7 If your paradigm is starting of its own accord before the scan starts, ensure the Run Mode (Edit menu) is set to Synchronize.</p><p id=\"\">\u00b7 If the paradigm is stuck on the \u2018Starting soon\u2019 slide, ensure that your scanner is giving out a trigger signal at the start of data acquisition.</p><p id=\"\">\u00b7 For Philips scanners, the \u2018Sync. Ext. Trig\u2019 option needs to be enabled within the BOLD protocol.</p><p id=\"\">\u00b7 The scanner will complete a number of dummy scans prior to starting the acquisition of images. It may then appear as though the paradigm is not starting at the start of the scan; however, you should see that once your first real measurement is being acquired, the paradigm starts.</p><p>\u200d</p>"
+        "bot_response": "<p id=\"\">There may be a few reasons.</p><p id=\"\">\u00b7 If your paradigm is starting of its own accord before the scan starts, ensure the Run Mode (Edit menu) is set to Synchronize.</p><p id=\"\">\u00b7 If the paradigm is stuck on the 'Starting soon' slide, ensure that your scanner is giving out a trigger signal at the start of data acquisition.</p><p id=\"\">\u00b7 For Philips scanners, the 'Sync. Ext. Trig' option needs to be enabled within the BOLD protocol.</p><p id=\"\">\u00b7 The scanner will complete a number of dummy scans prior to starting the acquisition of images. It may then appear as though the paradigm is not starting at the start of the scan; however, you should see that once your first real measurement is being acquired, the paradigm starts.</p><p>\u200d</p>"
     },
     {
         "Questin": "Why does nordicAktiva not see the LCD monitor?",
@@ -478,7 +570,7 @@
         "Created On": "Fri Jun 02 2023 13:16:49 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:01 GMT+0000 (Coordinated Universal Time)",
         "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">Try the following steps:</p><p id=\"\">1. Go to Edit/Settings and under the \u2018Displays\u2019 tab and select the correct patient display. The patient display is usually the number \u20182\u2019.</p><p id=\"\">2. If you don\u2019t see \u20182\u2019 in the dropdown menu, go to Windows \u2018Display settings\u2019 and check if it shows the second monitor. You can check the numbering of the monitors by clicking on \u2018Identify\u2019, where a number is allocated to each connected monitor.</p><p id=\"\">3. If you don\u2019t see the second monitor, make sure the LCD power supply in the MR room is on and all the connections are in place. This includes the HDMI connection between the nordicAktiva PC and the Fiber Transmitter as well as the connection between the power supply and the LCD monitor.</p><p>\u200d</p>"
+        "bot_response": "<p id=\"\">Try the following steps:</p><p id=\"\">1. Go to Edit/Settings and under the 'Displays' tab and select the correct patient display. The patient display is usually the number '2'.</p><p id=\"\">2. If you don't see '2' in the dropdown menu, go to Windows 'Display settings' and check if it shows the second monitor. You can check the numbering of the monitors by clicking on 'Identify', where a number is allocated to each connected monitor.</p><p id=\"\">3. If you don't see the second monitor, make sure the LCD power supply in the MR room is on and all the connections are in place. This includes the HDMI connection between the nordicAktiva PC and the Fiber Transmitter as well as the connection between the power supply and the LCD monitor.</p><p>\u200d</p>"
     },
     {
         "Questin": "Why does the video feed from the LCD camera look blurry or pixelated in nordicComfortPlayer?",
