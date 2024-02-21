@@ -545,83 +545,123 @@
         "Category / categories": "visualsystemhd"
     },
     {
+        "response_type": "question",
+        "user_input": ["entertainment", "options", "available", "nordiccomfortsolution"],
+        "bot_response": "<p>The nordicComfortSolution includes a wide range of entertainment options, including relaxing movies, music, opportunity to add streaming platforms, and more. Patients can choose from avariety of options to find the ones that best suit their preferences and needs.</p>",
+        "required_words": ["entertainment", "options", "available", "nordiccomfortsolution"],
+
         "Questin": "What types of entertainment options are available on the nordicComfortSolution?",
         "Item ID": "644a2944225ef89de20cd9bd",
         "Created On": "Thu Apr 27 2023 07:50:28 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:41:36 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p id=\"\">The nordicComfortSolution includes a wide range of entertainment options, including relaxing movies, music, opportunity to add streaming platforms, and more. Patients can choose from avariety of options to find the ones that best suit their preferences and needs.</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["nordiccomfortsolution", "what", "is"],
+        "bot_response": "<p>The nordicComfortSolution is a patient entertainment system developed by NordicNeuroLab to improve the patient experience during MRI scans. The system provides a variety of entertainment options, such as movies, and music, which can help distract patients and reduce anxiety during the scanning process.</p>",
+        "required_words": ["nordiccomfortsolution", "what", "is"],
+
         "Questin": "What is the nordicComfortSolution?",
         "Item ID": "63fdd742bb779cacb776e0d4",
         "Created On": "Tue Feb 28 2023 10:28:18 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:41:47 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p id=\"\">The nordicComfortSolution is a patient entertainment system developed by NordicNeuroLab to improve the patient experience during MRI scans. The system provides a variety of entertainment options, such as movies, and music, which can help distract patients and reduce anxiety during the scanning process.</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["mr", "coils", "used", "visualsystem", "hd"],
+        "bot_response": "<p>We have different adapters available to make it possible for the VisualSystem HD to be mounted on a variety of MR head coils. Feel free to get in touch with us at <a href='mailto:applicationsupport@nordicneurolab.com' target='_blank'>applicationsupport@nordicneurolab.com</a>, if you need more information for your setup.</p>",
+        "required_words": ["mr", "coils", "visualsystem", "hd"],
+
         "Questin": "Which MR head coils can be used with the VisualSystem HD?",
         "Item ID": "64904250943d12083b116a62",
         "Created On": "Mon Jun 19 2023 11:56:00 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:36:29 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "visualsystemhd",
-        "bot_response": "<p>We have different adapters available to make it possible for the VisualSystem HD to be mounted on a variety of MR head coils. Feel free to get in touch with us at <a href=\"mailto:applicationsupport@nordicneurolab.com\" target=\"_blank\" id=\"\">applicationsupport@nordicneurolab.com</a>, if you need more information for your setup.</p>"
+        "Category / categories": "visualsystemhd"
     },
     {
+        "response_type": "question",
+        "user_input": ["computer", "detect", "nordicbrainex", "network", "license"],
+        "bot_response": "<p>First check that both computers are on the same network. Then follow the steps below on your computer, i.e., the computer which does not have the license key connected to it. </p><ol start='1'><li>Open License Admin Control Center. </li><li>Click on Sentinel Keys in the top left. </li></ol><ul><li>This page shows all the NNL licenses this computer has access to. </li><li>Check if you do see a license listed here with an ID that has less than 12 digits. The 12 digits (or longer) are demo licenses installed when the software was first installed. </li><li>If you do not see your license, continue to step 3. </li></ul><ol start='3'><li>Click on 'Configuration'. </li></ol><ol start='4'><li>Select 'Access to remote License Managers'. </li></ol><ol start='5'><li>Make sure the following are all checked: </li></ol><ul><li>Allow Access to Remote Licenses </li><li>Broadcast Search for Remote Licenses </li><li>Aggressive Search for Remote Licenses</li></ul><ol start='6'><li>In the field next to 'Remote License Search Parameters' enter in the IP address of the computer that has the license key physically connected to it. </li></ol><ol start='7'><li>Click Submit. It may take a few minutes before it finds the license key. Check back under Sentinel Keys. </li></ol>",
+        "required_words": ["computer", "detect", "nordicbrainex", "network", "license"],
+
         "Questin": "Why can't my computer detect the nordicBrainEx network license?",
         "Item ID": "64903c9e377c4f25b1f0c4cd",
         "Created On": "Mon Jun 19 2023 11:31:42 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:10 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicbrainex",
-        "bot_response": "<p id=\"\">First check that both computers are on the same network. Then follow the steps below on your computer, i.e., the computer which does not have the license key connected to it. </p><ol start=\"\" id=\"\"><li id=\"\">Open License Admin Control Center. </li><li id=\"\">Click on Sentinel Keys in the top left. </li></ol><ul><li>This page shows all the NNL licenses this computer has access to. </li><li>Check if you do see a license listed here with an ID that has less than 12 digits. The 12 digits (or longer) are demo licenses installed when the software was first installed. </li><li>If you do not see your license, continue to step 3. </li></ul><ol start=\"3\" id=\"\"><li id=\"\">Click on 'Configuration'. </li></ol><ol start=\"4\" id=\"\"><li id=\"\">Select 'Access to remote License Managers'. </li></ol><ol start=\"5\" id=\"\"><li id=\"\">Make sure the following are all checked: </li></ol><ul><li>Allow Access to Remote Licenses </li><li>Broadcast Search for Remote Licenses </li><li>Aggressive Search for Remote Licenses</li></ul><ol start=\"6\" id=\"\"><li id=\"\">In the field next to 'Remote License Search Parameters' enter in the IP address of the computer that has the license key physically connected to it. </li></ol><ol start=\"7\" id=\"\"><li id=\"\">Click Submit. It may take a few minutes before it finds the license key. Check back under Sentinel Keys. </li></ol><p id=\"\">\u200d</p>"
+        "Category / categories": "nordicbrainex"
     },
     {
+        "response_type": "question",
+        "user_input": ["not", "cant", "see", "image", "lcd", "monitor"],
+        "bot_response": "<p>First check your computer 'Display settings'. If the LCD monitor is recognized, you should be able to see two monitors under 'System/Display', one for the stimulation PC and one for the LCD. You can click on 'Identify' to check the allocated number for each display. If you still don't see any image on the LCD monitor, check the video and power cables to the LCD, power supply (LPS), fiber transmitter (usually placed under the desk in the control room), and nordicAktiva PC (HDMI output), and make sure that they are correctly connected. On the fiber transmitter, both green LED (power) and blue LED (fiber/data) should be on.</p>",
+        "required_words": ["see", "image", "lcd", "monitor"],
+
         "Questin": "Why do I not see any image on the LCD monitor?",
         "Item ID": "64903fb067b14ba333545f92",
         "Created On": "Mon Jun 19 2023 11:44:48 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:38:03 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "inroomviewingdevice",
-        "bot_response": "<p>First check your computer 'Display settings'. If the LCD monitor is recognized, you should be able to see two monitors under 'System/Display', one for the stimulation PC and one for the LCD. You can click on 'Identify' to check the allocated number for each display. If you still don't see any image on the LCD monitor, check the video and power cables to the LCD, power supply (LPS), fiber transmitter (usually placed under the desk in the control room), and nordicAktiva PC (HDMI output), and make sure that they are correctly connected. On the fiber transmitter, both green LED (power) and blue LED (fiber/data) should be on.</p>"
+        "Category / categories": "inroomviewingdevice"
     },
     {
+        "response_type": "question",
+        "user_input": ["out", "of", "memory", "warning", "nordicbrainex"],
+        "bot_response": "<p>The software is a 32-bit application. If your underlying structural data has a high in-plane resolution, the maps used as overlays may be significantly up-sampled, which can cause memory issues.Under 'Settings', select 'Limit displayed resolution in MPR' to downsample your underlay image to a lower resolution. <br><br>If the problem remains, try loading fewer image series at one time. It may also help to limit the number of BOLD overlays that are visualized at the same time, if they are of a particularly high resolution or remove any derived data once they are saved into the database.</p>",
+        "required_words": ["memory", "warning", "nordicbrainex"],
+
         "Questin": "Why do I see an 'Out of Memory' warning in nordicBrainEx?",
         "Item ID": "64903b38a64eb3e511b9379c",
         "Created On": "Mon Jun 19 2023 11:25:44 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:19 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicbrainex",
-        "bot_response": "<p>The software is a 32-bit application. If your underlying structural data has a high in-plane resolution, the maps used as overlays may be significantly up-sampled, which can cause memory issues.Under 'Settings', select 'Limit displayed resolution in MPR' to downsample your underlay image to a lower resolution. <br><br>If the problem remains, try loading fewer image series at one time. It may also help to limit the number of BOLD overlays that are visualized at the same time, if they are of a particularly high resolution or remove any derived data once they are saved into the database.</p>"
+        "Category / categories": "nordicbrainex"
     },
     {
+        "response_type": "question",
+        "user_input": ["paradigm", "appear", "synchronize", "bold", "acquisition"],
+        "bot_response": "<p>There may be a few reasons.</p><ul><li>If your paradigm is starting of its own accord before the scan starts, ensure the Run Mode (Edit menu) is set to Synchronize.</li><li>If the paradigm is stuck on the 'Starting soon' slide, ensure that your scanner is giving out a trigger signal at the start of data acquisition.</li><li>For Philips scanners, the 'Sync. Ext. Trig' option needs to be enabled within the BOLD protocol.</li><li>The scanner will complete a number of dummy scans prior to starting the acquisition of images. It may then appear as though the paradigm is not starting at the start of the scan; however, you should see that once your first real measurement is being acquired, the paradigm starts.</li></ul>",
+        "required_words": ["paradigm", "appear", "synchronize", "bold", "acquisition"],
+
         "Questin": "Why does my paradigm not appear to synchronize with BOLD acquisition?",
         "Item ID": "6479ea7f63f2aac6863b73c1",
         "Created On": "Fri Jun 02 2023 13:11:27 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:29 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">There may be a few reasons.</p><p id=\"\">\u00b7 If your paradigm is starting of its own accord before the scan starts, ensure the Run Mode (Edit menu) is set to Synchronize.</p><p id=\"\">\u00b7 If the paradigm is stuck on the 'Starting soon' slide, ensure that your scanner is giving out a trigger signal at the start of data acquisition.</p><p id=\"\">\u00b7 For Philips scanners, the 'Sync. Ext. Trig' option needs to be enabled within the BOLD protocol.</p><p id=\"\">\u00b7 The scanner will complete a number of dummy scans prior to starting the acquisition of images. It may then appear as though the paradigm is not starting at the start of the scan; however, you should see that once your first real measurement is being acquired, the paradigm starts.</p><p>\u200d</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["nordicaktiva", "not", "see", "lcd", "monitor"],
+        "bot_response": "<p id=\"\">Try the following steps:</p><p id=\"\">1. Go to Edit/Settings and under the 'Displays' tab and select the correct patient display. The patient display is usually the number '2'.</p><p id=\"\">2. If you don't see '2' in the dropdown menu, go to Windows 'Display settings' and check if it shows the second monitor. You can check the numbering of the monitors by clicking on 'Identify', where a number is allocated to each connected monitor.</p><p id=\"\">3. If you don't see the second monitor, make sure the LCD power supply in the MR room is on and all the connections are in place. This includes the HDMI connection between the nordicAktiva PC and the Fiber Transmitter as well as the connection between the power supply and the LCD monitor.</p><p>\u200d</p>",
+        "required_words": ["nordicaktiva", "not", "see", "lcd", "monitor"],
+
         "Questin": "Why does nordicAktiva not see the LCD monitor?",
         "Item ID": "6479ebc1f710bbb26c3c544f",
         "Created On": "Fri Jun 02 2023 13:16:49 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:40:01 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p id=\"\">Try the following steps:</p><p id=\"\">1. Go to Edit/Settings and under the 'Displays' tab and select the correct patient display. The patient display is usually the number '2'.</p><p id=\"\">2. If you don't see '2' in the dropdown menu, go to Windows 'Display settings' and check if it shows the second monitor. You can check the numbering of the monitors by clicking on 'Identify', where a number is allocated to each connected monitor.</p><p id=\"\">3. If you don't see the second monitor, make sure the LCD power supply in the MR room is on and all the connections are in place. This includes the HDMI connection between the nordicAktiva PC and the Fiber Transmitter as well as the connection between the power supply and the LCD monitor.</p><p>\u200d</p>"
+        "Category / categories": "nordicaktiva"
     },
     {
+        "response_type": "question",
+        "user_input": ["video", "feed", "camera", "blurry", "pixelated", "nordiccomfortplayer"],
+        "bot_response": "<p>This could be due to data accumulation along the route from the camera to the Fiber Transmitter (usually placed under the desk in the control room) and back to the PC, where nordicComfortPlayer is installed. Close the nordicComfortPlayer, and then disconnect and reconnect the power supply on the Fiber Transmitter. Wait a few seconds and then open the nordicComfortPlayer again. This should solve the issue.</p>",
+        "required_words": ["video", "camera", "blurry", "pixelated", "nordiccomfortplayer"],
+
         "Questin": "Why does the video feed from the LCD camera look blurry or pixelated in nordicComfortPlayer?",
         "Item ID": "649040ba67b14ba3335553f0",
         "Created On": "Mon Jun 19 2023 11:49:14 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:37:16 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordiccomfortsolution",
-        "bot_response": "<p>This could be due to data accumulation along the route from the camera to the Fiber Transmitter (usually placed under the desk in the control room) and back to the PC, where nordicComfortPlayer is installed. Close the nordicComfortPlayer, and then disconnect and reconnect the power supply on the Fiber Transmitter. Wait a few seconds and then open the nordicComfortPlayer again. This should solve the issue.</p>"
+        "Category / categories": "nordiccomfortsolution"
     },
     {
+        "response_type": "question",
+        "user_input": ["playback", "slides", "not", "as", "expect", "expected"],
+        "bot_response": "<p>If your paradigm includes large audio or video files, there are limitations which can cause some unpredictable behavior. There may be a number of solutions depending on the content. One potential solution is to create and load a long video or audio file for the entire paradigm instead of using multiple video or audio files. For further assistance, please contact our application scientists at <a href='mailto:applicationsupport@nordicneurolab.com'>applicationsupport@nordicneurolab.com</a>.</p>",
+        "required_words": ["playback", "slides", "not", "as", "expect"],
+
         "Questin": "Why is playback of my slides not as I expect?",
         "Item ID": "6479ec98dd41c01a8d0a27b9",
         "Created On": "Fri Jun 02 2023 13:20:24 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Wed Jun 21 2023 11:39:50 GMT+0000 (Coordinated Universal Time)",
-        "Category / categories": "nordicaktiva",
-        "bot_response": "<p>If your paradigm includes large audio or video files, there are limitations which can cause some unpredictable behavior. There may be a number of solutions depending on the content. One potential solution is to create and load a long video or audio file for the entire paradigm instead of using multiple video or audio files. For further assistance, please contact our application scientists at <a href=\"mailto:applicationsupport@nordicneurolab.com\">applicationsupport@nordicneurolab.com</a>.</p>"
+        "Category / categories": "nordicaktiva"
     }
 ]
