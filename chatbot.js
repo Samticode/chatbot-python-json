@@ -6,12 +6,13 @@ const path = require('path');
 
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/chatbot', (req, res) => {
+app.post('/api/chatbot', (req, res) => {
     // Function to load responses from a JSON file
     function loadResponses(file) {
         let rawdata = fs.readFileSync(file);
@@ -55,43 +56,23 @@ app.get('/chatbot', (req, res) => {
         let maxScore = Math.max(...responseScores);
         let maxScoreIndex = responseScores.indexOf(maxScore);
 
-        // If user input is empty, return a prompt for input
-        if (userInput === "") {
-            return "Tell me your problems, I'm here to help!";
-        }
-
         // If a response with a non-zero score was found, return it
         if (maxScore !== 0) {
             return responses[maxScoreIndex]["bot_response"];
         }
 
-        // If no suitable response was found, return a random response
-        return randomString();
+        // If no suitable response was found, return a default response
+        return "<p>I'm sorry, I didn't understand that.</p>";
     }
 
-    // Function to generate a random string
-    function randomString() {
-        let randomList = [
-            "<p>I didn't quite understand that</p>",
-            '<p>Can you say it in another way.</p>',
-            '<p>Get in contact with us on <a href="https://www.nordicneurolab.com/support">NordicNeuroLab.con</a></p>'
-        ];
+    // Get the user's message from the request body
+    let userMessage = req.body.message;
 
-        let listCount = randomList.length;
-        let randomItem = Math.floor(Math.random() * listCount);
+    // Get the best response
+    let botResponse = getBestResponse(userMessage);
 
-        return randomList[randomItem];
-    }
-
-    // Main loop to get user input and print the bot's response
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
-
-    rl.on('line', (input) => {
-        console.log(`NNL Chatbot: ${getBestResponse(input)}`);
-    });
+    // Send the response back to the client
+    res.json({ message: botResponse });
 });
 
 

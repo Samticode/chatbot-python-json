@@ -58,7 +58,7 @@
         "bot_response": "<p>Yes, the SyncBox can forward the MR-triggers to other equipment, e.g., an EEG system. There are, however, different approaches depending on your setup: </p><ul><li>If you are not using the ResponseGrips in your setup, then you can use the TTL port (9) on the SyncBox in order to forward the triggers. The TTL port should then be connected to the parallel port of your system. </li><li>You can also forward the received triggers using the serial port (4) on the SyncBox. Here you will need a serial cable which connects the SyncBox to your system. </li></ul>",
         "required_words": ["forward", "mr-triggers", "syncbox"],
 
-        "Questin": "Can I forward the received MR-triggers from the SyncBox to other equipment?  ",
+        "Questin": "Can I forward the received MR-triggers from the SyncBox to other equipment?",
         "Item ID": "64942dc0221ba05b97785ae2",
         "Created On": "Thu Jun 22 2023 11:17:20 GMT+0000 (Coordinated Universal Time)",
         "Updated On": "Thu Jun 22 2023 11:17:20 GMT+0000 (Coordinated Universal Time)",
@@ -534,9 +534,9 @@
     },
     {
         "response_type": "question",
-        "user_input": ["software", "applications", "with", "visualsystemhd"],
+        "user_input": ["software", "applications", "application", "with", "visualsystemhd"],
         "bot_response": "<p>Different software packages can be used with our VisualSystemHD goggles such as PsychoPy, Psychtoolbox, Stereoscopic Player or Unity. Guidance documentation can be found<strong><em> </em></strong><a href='https://www.nordicneurolab.com/resources#user-guides'><strong><em>here</em></strong></a><strong><em>, </em></strong>and is constantly being expanded and updated. If you are interested in specific software for which a guide is not available on our website, please contact us at <a href='mailto:applicationsupport@nordicneurolab.com' target='_blank'>applicationsupport@nordicneurolab.com</a>.</p>",
-        "required_words": ["software", "applications", "visualsystemhd"],
+        "required_words": ["software", "applications", "application", "visualsystemhd"],
 
         "Questin": "What other software applications can I use with the VisualSystemHD goggles? ",
         "Item ID": "649041b68e805fe36dc16a2b",
@@ -560,7 +560,7 @@
         "response_type": "question",
         "user_input": ["nordiccomfortsolution", "what", "is"],
         "bot_response": "<p>The nordicComfortSolution is a patient entertainment system developed by NordicNeuroLab to improve the patient experience during MRI scans. The system provides a variety of entertainment options, such as movies, and music, which can help distract patients and reduce anxiety during the scanning process.</p>",
-        "required_words": ["nordiccomfortsolution", "what", "is"],
+        "required_words": ["nordiccomfortsolution"],
 
         "Questin": "What is the nordicComfortSolution?",
         "Item ID": "63fdd742bb779cacb776e0d4",
@@ -631,7 +631,7 @@
     {
         "response_type": "question",
         "user_input": ["nordicaktiva", "not", "see", "lcd", "monitor"],
-        "bot_response": "<p id=\"\">Try the following steps:</p><p id=\"\">1. Go to Edit/Settings and under the 'Displays' tab and select the correct patient display. The patient display is usually the number '2'.</p><p id=\"\">2. If you don't see '2' in the dropdown menu, go to Windows 'Display settings' and check if it shows the second monitor. You can check the numbering of the monitors by clicking on 'Identify', where a number is allocated to each connected monitor.</p><p id=\"\">3. If you don't see the second monitor, make sure the LCD power supply in the MR room is on and all the connections are in place. This includes the HDMI connection between the nordicAktiva PC and the Fiber Transmitter as well as the connection between the power supply and the LCD monitor.</p><p>\u200d</p>",
+        "bot_response": "<p>Try the following steps:</p><p>1. Go to Edit/Settings and under the 'Displays' tab and select the correct patient display. The patient display is usually the number '2'.</p><p>2. If you don't see '2' in the dropdown menu, go to Windows 'Display settings' and check if it shows the second monitor. You can check the numbering of the monitors by clicking on 'Identify', where a number is allocated to each connected monitor.</p><p>3. If you don't see the second monitor, make sure the LCD power supply in the MR room is on and all the connections are in place. This includes the HDMI connection between the nordicAktiva PC and the Fiber Transmitter as well as the connection between the power supply and the LCD monitor.</p><p>\u200d</p>",
         "required_words": ["nordicaktiva", "not", "see", "lcd", "monitor"],
 
         "Questin": "Why does nordicAktiva not see the LCD monitor?",
