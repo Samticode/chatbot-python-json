@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1>Start Chatting</h1>
-
+    <button class="chatbot-btn"></button>
     <div class="chat-container">
+
         <div>
             <section class="response-container">
                 <div class="botDiv">
-                    <p>I am a chatbot, I can help you with anything you want :)</p>
+                    <p>I am a FAQ chatbot. Ask me something :)</p>
                 </div>
             </section>
             <form onsubmit="formSubmit(event)">
@@ -24,6 +24,13 @@
     </div>
 </body>
 <script>
+    const chatbotBtn = document.querySelector('.chatbot-btn');
+    const chatContainer = document.querySelector('.chat-container');
+
+    chatbotBtn.addEventListener('click', () => {
+        chatContainer.classList.toggle('show');
+    });
+
     const responseContainer = document.querySelector('.response-container');
 
     async function formSubmit(e) {
